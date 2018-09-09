@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>结算管理</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="./layui/css/layui.css">
+  <link rel="stylesheet" href="./css/financial.css">
+  <script src="./js/jquery-2.2.0.min.js"></script>
+  <script src="./js/base.js"></script>
+</head>
+<body>
+  <div class="layui-header">
+    <div class="search-area">
+      <i class="layui-icon layui-icon-search" style="font-size:16px;color:#7d8a96;margin-right:10px;"></i>
+      <input type="text" value="搜索点什么...">
+    </div>   
+    <ul class="header-nav">
+      <li>
+        <a href="javascript:void(0);">
+          <i class="layui-icon layui-icon-home" style="font-size:20px;color:#7d8a96;"></i>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0);">
+          <i class="layui-icon layui-icon-notice" style="font-size:20px;color:#7d8a96;"></i>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0);">
+          <i class="layui-icon layui-icon-set-fill" style="font-size:20px;color:#7d8a96;"></i>
+        </a>
+      </li>
+      <li>
+        <img class="li-img">
+      </li>
+      <li>
+        <a href="javascript:void(0);" class="appearance">
+          <img class="user-img">Eldar Burnashev<img class="nav-icon">
+        </a>
+        <ul style="display: none">
+          <li>
+            <a href="javascript:void(0);">基本资料</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">安全设置</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a class="nav-exit" href="javascript:void(0);">退出</a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar">
+    <img src="images/组-6.png" alt="logo"/>
+    <ul class="nav" >
+      <li class="nav-item" >
+      <a href="客户管理.html" >客户管理<i style="width:10px;height:10px;background: url(./images/left.png)center no-repeat;display:block;position:relative;top:-27px;right: -149px;"></i></a>
+        <dl class="nav-child" style="display:none;margin-bottom:8px;"> 
+          <!-- 二级菜单 -->
+          <dd><a href="添加直属客户.html">直属客户</a></dd>
+        </dl>
+      </li>
+      <li class="nav-item"><a href="终端组管理.html">终端组管理</a></li>
+      <li class="nav-item"><a href="终端管理.html">终端管理</a></li>
+      <li class="nav-item">
+        <a href="客户财务管理.html">客户财务<i style="width:10px;height:10px;background: url(./images/left.png)center no-repeat;display:block;position:relative;top:-27px;right: -149px;"></i></a>
+        <dl class="nav-child" style="display:none;margin-bottom:8px;"> 
+          <!-- 二级菜单 -->
+          <dd><a href="结算管理.html" class="active">结算管理</a></dd>
+        </dl>
+      </li>
+      <li class="nav-item"><a href="素材审核管理.html">素材审核</a></li>
+      <li class="nav-item"><a href="自售广告审核管理.html">自售审核</a></li>
+      <li class="nav-item"><a href="竞价服务审核管理.html">竞价审核</a></li>
+    </ul>
+  </div>
+  <div class="pageName">
+    <span class="page-span">结算管理</span>
+    <hr style="background:#dde5ed;">
+    <hr style="background:#d4dce4;">
+    <hr style="background:#dde5ed;">
+  </div>
+  <div class="content">
+    <!-- 内容主体区域 -->
+    <form class="layui-form search-box" action="">
+      <div class="layui-inline">
+          <label class="layui-form-label">客户账户</label>
+          <div class="layui-input-inline">
+            <input type="text" name="title" required autocomplete="off" class="layui-input">
+          </div>  
+        </div>
+        <div class="layui-inline">
+          <button class="layui-btn" lay-submit lay-filter="formDemo">搜索</button>
+        </div>  
+    </form>
+    <div class="layui-row">
+      <div class="layui-col-xs6 layui-col-sm6 layui-col-md6 layui-col-lg6">
+        <table class="layui-table">
+          <colgroup>
+            <col width="150">
+            <col width="200">
+            <col width="200">
+            <col width="200">
+          </colgroup>
+          <thead>
+            <tr>
+                <th>客户账号</th>
+                <th>已结算金额</th>
+                <th>上次结算月份</th>
+                <th>操作</th>
+            </tr> 
+          </thead>
+          <tbody>
+            <tr>
+                <td>123@123.com</td>
+                <td>1000</td>
+                <td>2018-4</td>
+                <td><a href="结算明细.html" style="color:#01AAED;">查看明细</a></td>
+            </tr>
+            <tr>
+                <td>123@123.com</td>
+                <td>1000</td>
+                <td>2018-4</td>
+                <td><a href="结算明细.html" style="color:#01AAED;">查看明细</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="layui-footer">
+    <!-- 底部固定区域 -->
+    © layui.com - 底部固定区域
+  </div>
+    
+  <script src="./layui/layui.js"></script>
+  <script>
+    //JavaScript代码区域
+    layui.use(['element','form'], function(){
+      var element = layui.element;
+      var form = layui.form;
+    });
+  </script>
+</body>
+</html>

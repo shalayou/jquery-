@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>自售广告审核管理</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="./layui/css/layui.css">
+  <link rel="stylesheet" href="./css/financial.css">
+  <script src="./js/jquery-2.2.0.min.js"></script>
+  <script src="./js/base.js"></script>
+  <script src="./js/sales.js"></script>
+</head>
+<body>
+  <div class="layui-header">
+    <div class="search-area">
+      <i class="layui-icon layui-icon-search" style="font-size:16px;color:#7d8a96;margin-right:10px;"></i>
+      <input type="text" value="搜索点什么...">
+    </div>   
+    <ul class="header-nav">
+      <li>
+        <a href="javascript:void(0);">
+          <i class="layui-icon layui-icon-home" style="font-size:20px;color:#7d8a96;"></i>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0);">
+          <i class="layui-icon layui-icon-notice" style="font-size:20px;color:#7d8a96;"></i>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0);">
+          <i class="layui-icon layui-icon-set-fill" style="font-size:20px;color:#7d8a96;"></i>
+        </a>
+      </li>
+      <li>
+        <img class="li-img">
+      </li>
+      <li>
+        <a href="javascript:void(0);" class="appearance">
+          <img class="user-img">Eldar Burnashev<img class="nav-icon">
+        </a>
+        <ul style="display: none">
+          <li>
+            <a href="javascript:void(0);">基本资料</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">安全设置</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a class="nav-exit" href="javascript:void(0);">退出</a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar">
+    <img src="images/组-6.png" alt="logo"/>
+    <ul class="nav" >
+      <li class="nav-item" >
+      <a href="客户管理.html" >客户管理<i style="width:10px;height:10px;background: url(./images/left.png)center no-repeat;display:block;position:relative;top:-27px;right: -149px;"></i></a>
+        <dl class="nav-child" style="display:none;margin-bottom:8px;"> 
+          <!-- 二级菜单 -->
+          <dd><a href="添加直属客户.html">直属客户</a></dd>
+        </dl>
+      </li>
+      <li class="nav-item"><a href="终端组管理.html">终端组管理</a></li>
+      <li class="nav-item"><a href="终端管理.html">终端管理</a></li>
+      <li class="nav-item">
+        <a href="客户财务管理.html">客户财务<i style="width:10px;height:10px;background: url(./images/left.png)center no-repeat;display:block;position:relative;top:-27px;right: -149px;"></i></a>
+        <dl class="nav-child" style="display:none;margin-bottom:8px;"> 
+          <!-- 二级菜单 -->
+          <dd><a href="结算管理.html">结算管理</a></dd>
+        </dl>
+      </li>
+      <li class="nav-item"><a href="素材审核管理.html">素材审核</a></li>
+      <li class="nav-item"><a href="自售广告审核管理.html" class="active">自售审核</a></li>
+      <li class="nav-item"><a href="竞价服务审核管理.html">竞价审核</a></li>
+    </ul>
+  </div>
+  <div class="pageName">
+    <span class="page-span">自售审核</span>
+    <hr style="background:#dde5ed;">
+    <hr style="background:#d4dce4;">
+    <hr style="background:#dde5ed;">
+  </div>
+  <div class="content">
+    <form class="content-search layui-form">
+      <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">客户账号</label>
+        <div class="layui-input-inline">
+          <input type="text" name="title" autocomplete="off" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">广告标题</label>
+        <div class="layui-input-inline">
+          <input type="text" name="title" autocomplete="off" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">状态</label>
+        <div class="layui-inline">
+          <select name="state">
+            <option value="">--请选择--</option>
+            <option value="0">全部</option>
+            <option value="1">运行</option>
+            <option value="1">停止</option>
+          </select>
+        </div>
+      </div>
+      <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">审核状态</label>
+        <div class="layui-inline">
+          <select name="state">
+            <option value="">--请选择--</option>
+            <option value="0">全部</option>
+            <option value="1">拒绝</option>
+            <option value="1">通过</option>
+          </select>
+        </div>
+      </div>
+      <div class="layui-form-item layui-inline">
+        <div class="layui-inline">
+          <button type="button" class="layui-btn">搜索</button>
+        </div>
+      </div>
+    </form>
+    <div class="layui-row charm">
+      <table class="layui-table" lay-even lay-skin="nob">
+        <thead>
+          <tr>
+            <th>广告标题</th>
+            <th>广告类型</th>
+            <th>素材类型</th>
+            <th>播放周期</th>
+            <th>终端组</th>
+            <th>屏幕显示模板</th>
+            <th>屏幕尺寸</th>
+            <th>广告位</th>
+            <th>状态</th>
+            <th>审核状态</th>
+            <th>操作</th>
+          </tr> 
+        </thead>
+        <tbody>
+          <tr>
+            <td>自售广告1</td>
+            <td>普通</td>
+            <td>图片</td>
+            <td>2018-05-04至2018-05-11</td>
+            <td>终端组1</td>
+            <td>模板1</td>
+            <td>1980x1080</td>
+            <td>600x300</td>
+            <td style="color:#009688;"><i class="layui-icon layui-icon-radio" style="font-size: 12px;"></i>运行</td>
+            <td style="color:#009688;">通过</td>
+            <td>
+              <a href="" value="预览" class="layui-bg-blue td-a"><i class="layui-icon layui-icon-templeate-1" style="font-size: 16px; color: #fff;"></i>预览</a>
+              <a href="" value="审核通过" style="display: none;" class="layui-bg-green td-a"><i class="layui-icon layui-icon-face-smile" style="font-size: 16px; color: #fff;"></i>审核通过</a>
+              <a href="" value="拒绝" class="layui-bg-red td-a"><i class="layui-icon layui-icon-face-cry" style="font-size: 16px; color: #fff;"></i>拒绝</a>
+              <a href="" value="停止" class="layui-bg-red td-a"><i class="layui-icon layui-icon-pause" style="font-size: 16px; color: #fff;"></i>停止</a>
+              <a href="" value="启动" style="display: none;" class="layui-bg-green td-a"><i class="layui-icon layui-icon-play" style="font-size: 16px; color: #fff;"></i>启动</a>
+            </td>
+          </tr>
+          <tr>
+            <td>自售广告1</td>
+            <td>普通</td>
+            <td>图片</td>
+            <td>2018-05-04至2018-05-11</td>
+            <td>终端组1</td>
+            <td>模板1</td>
+            <td>1980x1080</td>
+            <td>600x300</td>
+            <td style="color:#FF5722;"><i class="layui-icon layui-icon-radio" style="font-size: 12px;"></i>停止</td>
+            <td style="color:#1e9fff;">未审核</td>
+            <td>
+              <a href="" value="预览" class="layui-bg-blue td-a"><i class="layui-icon layui-icon-templeate-1" style="font-size: 16px; color: #fff;"></i>预览</a>
+              <a href="" value="审核通过" style="display: none;" class="layui-bg-green td-a"><i class="layui-icon layui-icon-face-smile" style="font-size: 16px; color: #fff;"></i>审核通过</a>
+              <a href="" value="拒绝" class="layui-bg-red td-a"><i class="layui-icon layui-icon-face-cry" style="font-size: 16px; color: #fff;"></i>拒绝</a>
+              <a href="" value="停止" class="layui-bg-red td-a"><i class="layui-icon layui-icon-pause" style="font-size: 16px; color: #fff;"></i>停止</a>
+              <a href="" value="启动" class="layui-bg-green td-a"><i class="layui-icon layui-icon-play" style="font-size: 16px; color: #fff;"></i>启动</a>
+            </td>
+          </tr>
+          <tr>
+            <td>自售广告2</td>
+            <td>紧急</td>
+            <td>图片</td>
+            <td>2018-05-04至2018-05-11</td>
+            <td>终端组1</td>
+            <td>模板1</td>
+            <td>1980x1080</td>
+            <td>600x300</td>
+            <td style="color:#FF5722;"><i class="layui-icon layui-icon-radio" style="font-size: 12px;"></i>停止</td>
+            <td style="color:#FF5722;">拒绝</td>
+            <td>
+              <a href="" value="预览" class="layui-bg-blue td-a"><i class="layui-icon layui-icon-templeate-1" style="font-size: 16px; color: #fff;"></i>预览</a>
+              <a href="" value="审核通过" class="layui-bg-green td-a"><i class="layui-icon layui-icon-face-smile" style="font-size: 16px; color: #fff;"></i>审核通过</a>
+              <a href="" value="拒绝" style="display: none;" class="layui-bg-cyan td-a"><i class="layui-icon layui-icon-face-cry" style="font-size: 16px; color: #fff;"></i>拒绝</a>
+              <a href="" value="停止" style="display: none;" class="layui-bg-cyan td-a"><i class="layui-icon layui-icon-pause" style="font-size: 16px; color: #fff;"></i>停止</a>
+              <a href="" value="启动" class="layui-bg-green td-a"><i class="layui-icon layui-icon-play" style="font-size: 16px; color: #fff;"></i>启动</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  <!--  分页 -->
+      <div id="page"></div>
+      </div>
+    
+  </div>
+  <div class="layui-footer">
+    <!-- 底部固定区域 -->
+    © layui.com - 底部固定区域
+  </div>
+    
+  <script src="./layui/layui.js"></script>
+  <script>
+    //JavaScript代码区域
+    layui.use(['element','form','laypage'], function(){
+      var element = layui.element;
+      var form = layui.form;
+      var laypage = layui.laypage;
+
+      //分页
+      laypage.render({
+        elem: 'page' //分页容器的id
+        ,count: 100 //总页数
+        ,skin: '#1E9FFF' //自定义选中色值
+      //,skip: true //开启跳页
+        ,jump: function(obj, first){
+          if(!first){
+            layer.msg('第'+ obj.curr +'页');
+          }
+        }
+      });
+
+
+    });
+  </script>
+</body>
+</html>

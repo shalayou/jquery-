@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>终端管理</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="./layui/css/layui.css">
+  <link rel="stylesheet" href="./css/financial.css">
+  <script src="./js/jquery-2.2.0.min.js"></script>
+  <script src="./js/base.js"></script>
+  <script src="./js/terimal.js"></script>
+</head>
+<body>
+  <div class="layui-header">
+    <div class="search-area">
+      <i class="layui-icon layui-icon-search" style="font-size:16px;color:#7d8a96;margin-right:10px;"></i>
+      <input type="text" value="搜索点什么...">
+    </div>   
+    <ul class="header-nav">
+      <li>
+        <a href="javascript:void(0);">
+          <i class="layui-icon layui-icon-home" style="font-size:20px;color:#7d8a96;"></i>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0);">
+          <i class="layui-icon layui-icon-notice" style="font-size:20px;color:#7d8a96;"></i>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0);">
+          <i class="layui-icon layui-icon-set-fill" style="font-size:20px;color:#7d8a96;"></i>
+        </a>
+      </li>
+      <li>
+        <img class="li-img">
+      </li>
+      <li>
+        <a href="javascript:void(0);" class="appearance">
+          <img class="user-img">Eldar Burnashev<img class="nav-icon">
+        </a>
+        <ul style="display: none">
+          <li>
+            <a href="javascript:void(0);">基本资料</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">安全设置</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a class="nav-exit" href="javascript:void(0);">退出</a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar">
+    <img src="images/组-6.png" alt="logo"/>
+    <ul class="nav" >
+      <li class="nav-item" >
+      <a href="客户管理.html" >客户管理<i style="width:10px;height:10px;background: url(./images/left.png)center no-repeat;display:block;position:relative;top:-27px;right: -149px;"></i></a>
+        <dl class="nav-child" style="display:none;margin-bottom:8px;"> 
+          <!-- 二级菜单 -->
+          <dd><a href="添加直属客户.html">直属客户</a></dd>
+        </dl>
+      </li>
+      <li class="nav-item"><a href="终端组管理.html">终端组管理</a></li>
+      <li class="nav-item"><a href="终端管理.html" class="active">终端管理</a></li>
+      <li class="nav-item">
+        <a href="客户财务管理.html">客户财务<i style="width:10px;height:10px;background: url(./images/left.png)center no-repeat;display:block;position:relative;top:-27px;right: -149px;"></i></a>
+        <dl class="nav-child" style="display:none;margin-bottom:8px;"> 
+          <!-- 二级菜单 -->
+          <dd><a href="结算管理.html">结算管理</a></dd>
+        </dl>
+      </li>
+      <li class="nav-item"><a href="素材审核管理.html">素材审核</a></li>
+      <li class="nav-item"><a href="自售广告审核管理.html">自售审核</a></li>
+      <li class="nav-item"><a href="竞价服务审核管理.html">竞价审核</a></li>
+    </ul>
+  </div>
+  <div class="pageName">
+    <span class="page-span">终端管理</span>
+    <hr style="background:#dde5ed;">
+    <hr style="background:#d4dce4;">
+    <hr style="background:#dde5ed;">
+  </div>
+  <div class="content">
+    <!-- 内容主体区域 -->
+    <form class="content-search layui-form">
+      <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">所属客服</label>
+        <div class="layui-inline">
+          <select name="service" lay-verify="required">
+            <option value="">--请选择--</option>
+            <option value="0">客服1</option>
+            <option value="1">客服2</option>
+          </select>
+        </div>
+      </div>
+      <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">终端组名称</label>
+        <div class="layui-input-inline">
+          <input type="text" name="title" required placeholder="请输入终端组" autocomplete="off" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item layui-inline">
+        <button type="button" class="layui-btn">搜索</button>
+      </div>
+    </form>
+    <!--  表格和分页  -->
+    <div class="layui-row charm">
+      <table class="layui-table" lay-even lay-skin="nob">
+        <thead>
+          <tr>
+            <th>终端名称</th>
+            <th>屏幕宽高</th>
+            <th>地区</th>
+            <th>场景</th>
+            <th>商圈</th>
+            <th>终端类型</th>
+            <th>所属终端组</th>
+            <th>屏幕显示模板</th>
+            <th>IP</th>
+            <th>连接状态</th>
+            <th>状态</th>
+            <th>操作</th>
+          </tr> 
+        </thead>
+        <tbody>
+          <tr>
+            <td>终端1</td>
+            <td>1920x1080</td>
+            <td>江苏苏州市</td>
+            <td>机场</td>
+            <td>万达</td>
+            <td>广告牌</td>
+            <td>终端组1</td>
+            <td>模板1</td>
+            <td>120.40.35.97</td>
+            <td>在线</td>
+            <td><i class="layui-icon layui-icon-radio" style="font-size: 12px;"></i>运行</td>
+            <td>
+              <a href="" value="发布自售" class="layui-bg-orange td-a"><i class="layui-icon layui-icon-templeate-1" style="font-size: 16px; color: #fff;"></i>发布自售</a>
+              <a href="" value="发布竞价" class="layui-bg-green td-a"><i class="layui-icon layui-icon-pause" style="font-size: 16px; color: #fff;"></i>发布竞价</a>
+              <a href="" value="远程控制" class="layui-bg-cyan td-a"><i class="layui-icon layui-icon-engine" style="font-size: 16px; color: #fff;"></i>远程控制</a>
+              <a href="" value="查看" class="layui-bg-blue td-a"><i class="layui-icon layui-icon-form" style="font-size: 16px; color: #fff;"></i>查看</a>
+              <a href="" value="修改" class="layui-bg-black td-a"><i class="layui-icon layui-icon-templeate-1" style="font-size: 16px; color: #fff;"></i>修改</a>
+              <a href="" value="停止" class="layui-bg-red td-a"><i class="layui-icon layui-icon-pause" style="font-size: 16px; color: #fff;"></i>停止</a>
+              <a href="" value="启动" class="layui-bg-green td-a"><i class="layui-icon layui-icon-play" style="font-size: 16px; color: #fff;"></i>启动</a>
+              <a href="" value="删除" class="layui-bg-black td-a"><i class="layui-icon layui-icon-delete" style="font-size: 16px; color: #fff;"></i>删除</a>
+            </td>
+          </tr>
+          <tr>
+            <td>终端1</td>
+            <td>1920x1080</td>
+            <td>江苏苏州市</td>
+            <td>机场</td>
+            <td>万达</td>
+            <td>广告牌</td>
+            <td>终端组1</td>
+            <td>模板1</td>
+            <td>120.40.35.97</td>
+            <td>离线</td>
+            <td><i class="layui-icon layui-icon-radio" style="font-size: 12px;"></i>停用</td>
+            <td>
+              <a href="" value="发布自售" class="layui-bg-orange td-a"><i class="layui-icon layui-icon-templeate-1" style="font-size: 16px; color: #fff;"></i>发布自售</a>
+              <a href="" value="发布竞价" class="layui-bg-green td-a"><i class="layui-icon layui-icon-pause" style="font-size: 16px; color: #fff;"></i>发布竞价</a>
+              <a href="" value="远程控制" class="layui-bg-cyan td-a"><i class="layui-icon layui-icon-engine" style="font-size: 16px; color: #fff;"></i>远程控制</a>
+              <a href="" value="查看" class="layui-bg-blue td-a"><i class="layui-icon layui-icon-form" style="font-size: 16px; color: #fff;"></i>查看</a>
+              <a href="" value="修改" class="layui-bg-black td-a"><i class="layui-icon layui-icon-templeate-1" style="font-size: 16px; color: #fff;"></i>修改</a>
+              <a href="" value="停止" class="layui-bg-red td-a"><i class="layui-icon layui-icon-pause" style="font-size: 16px; color: #fff;"></i>停止</a>
+              <a href="" value="启动" class="layui-bg-green td-a"><i class="layui-icon layui-icon-play" style="font-size: 16px; color: #fff;"></i>启动</a>
+              <a href="" value="删除" class="layui-bg-black td-a"><i class="layui-icon layui-icon-delete" style="font-size: 16px; color: #fff;"></i>删除</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  <!--  分页 -->
+      <div id="page"></div>
+      </div>
+  </div>
+  <div class="layui-footer">
+    <!-- 底部固定区域 -->
+    © layui.com - 底部固定区域
+  </div>
+    
+  <script src="./layui/layui.js"></script>
+  <script>
+    //JavaScript代码区域
+    layui.use(['element','laypage','form'], function(){
+      var element = layui.element;
+      var laypage = layui.laypage;
+      var form = layui.form;
+
+      //分页
+      laypage.render({
+        elem: 'page' //分页容器的id
+        ,count: 100 //总页数
+        ,skin: '#1E9FFF' //自定义选中色值
+      //,skip: true //开启跳页
+        ,jump: function(obj, first){
+          if(!first){
+            layer.msg('第'+ obj.curr +'页');
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

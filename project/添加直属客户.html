@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>直属客户</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="./layui/css/layui.css">
+  <link rel="stylesheet" href="./css/direc-customer.css">
+  <script src="./layui/layui.js"></script>
+  <script src="./js/jquery-2.2.0.min.js"></script>
+  <script src="./js/base.js"></script>
+  <script src="./js/direc-customer.js"></script>
+</head>
+<body>
+  <div class="layui-header">
+    <div class="search-area">
+      <i class="layui-icon layui-icon-search" style="font-size:16px;color:#7d8a96;margin-right:10px;"></i>
+      <input type="text" value="搜索点什么...">
+    </div>   
+    <ul class="header-nav">
+      <li>
+        <a href="javascript:void(0);">
+          <i class="layui-icon layui-icon-home" style="font-size:20px;color:#7d8a96;"></i>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0);">
+          <i class="layui-icon layui-icon-notice" style="font-size:20px;color:#7d8a96;"></i>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0);">
+          <i class="layui-icon layui-icon-set-fill" style="font-size:20px;color:#7d8a96;"></i>
+        </a>
+      </li>
+      <li>
+        <img class="li-img">
+      </li>
+      <li>
+        <a href="javascript:void(0);" class="appearance">
+          <img class="user-img">Eldar Burnashev<img class="nav-icon">
+        </a>
+        <ul style="display: none">
+          <li>
+            <a href="javascript:void(0);">基本资料</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">安全设置</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a class="nav-exit" href="javascript:void(0);">退出</a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar">
+    <img src="images/组-6.png" alt="logo"/>
+    <ul class="nav" >
+      <li class="nav-item" >
+        <a href="客户管理.html" >客户管理<i style="width:10px;height:10px;background: url(./images/left.png)center no-repeat;display:block;position:relative;top:-27px;right: -149px;"></i></a>
+        <dl class="nav-child" style="display:none;margin-bottom:8px;"> 
+          <!-- 二级菜单 -->
+          <dd><a href="添加直属客户.html" class="active">直属客户</a></dd>
+        </dl>
+      </li>
+      <li class="nav-item"><a href="终端组管理.html">终端组管理</a></li>
+      <li class="nav-item"><a href="终端管理.html">终端管理</a></li>
+      <li class="nav-item">
+        <a href="客户财务管理.html">客户财务<i style="width:10px;height:10px;background: url(./images/left.png)center no-repeat;display:block;position:relative;top:-27px;right: -149px;"></i></a>
+        <dl class="nav-child" style="display:none;margin-bottom:8px;"> 
+          <!-- 二级菜单 -->
+          <dd><a href="结算管理.html">结算管理</a></dd>
+        </dl>
+      </li>
+      <li class="nav-item"><a href="素材审核管理.html">素材审核</a></li>
+      <li class="nav-item"><a href="自售广告审核管理.html">自售审核</a></li>
+      <li class="nav-item"><a href="竞价服务审核管理.html">竞价审核</a></li>
+    </ul>
+  </div>
+  <div class="pageName">
+    <span class="page-span">直属客户</span>
+    <hr style="background:#dde5ed;">
+    <hr style="background:#d4dce4;">
+    <hr style="background:#dde5ed;">
+  </div>
+  <div class="content">
+    <form class="content-search layui-form">
+      <div class="layui-form-item">
+        <label class="layui-form-label">客户账户</label>
+        <div class="layui-input-inline">
+          <input type="text" name="title" required placeholder="请输入客户名称" autocomplete="off" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">客户名称</label>
+        <div class="layui-input-inline">
+          <input type="text" name="title" required placeholder="请输入客户账户" autocomplete="off" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">密码</label>
+        <div class="layui-input-inline">
+          <input type="text" name="title" required placeholder="请输入客户名称" autocomplete="off" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">确认密码</label>
+        <div class="layui-input-inline">
+          <input type="text" name="title" required placeholder="请输入客户账户" autocomplete="off" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">联系人姓名</label>
+        <div class="layui-input-inline">
+          <input type="text" name="title" required placeholder="请输入客户名称" autocomplete="off" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">联系人手机号</label>
+        <div class="layui-input-inline">
+          <input type="text" name="title" required placeholder="请输入客户账户" autocomplete="off" class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">联系地址</label>
+        <div class="layui-input-inline">
+          <textarea name="desc" placeholder="请输入地址" class="layui-textarea"></textarea>
+        </div>
+      </div>
+      <div class="layui-inline">
+        <label class="layui-form-label">所属客服</label>
+        <div class="layui-inline">
+          <select name="service" lay-verify="required">
+            <option value="">--请选择--</option>
+            <option value="0">北京</option>
+            <option value="1">上海</option>
+          </select>
+        </div>
+      </div>
+      <div class="content-btn">
+        <button type="button" class="btn-submit   layui-btn">确定</button>
+        <button type="button" class="reset layui-btn layui-btn-primary">重置</button>
+      </div>
+    </form>
+  </div>
+  <div class="layui-footer">
+    <!-- 底部固定区域 -->
+    © layui.com - 底部固定区域
+  </div>
+</body>
+</html>
