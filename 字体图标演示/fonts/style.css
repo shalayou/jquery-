@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?jxlklz');
+  src:  url('fonts/icomoon.eot?jxlklz#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?jxlklz') format('truetype'),
+    url('fonts/icomoon.woff?jxlklz') format('woff'),
+    url('fonts/icomoon.svg?jxlklz#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-turnLeft:before {
+  content: "\e900";
+}
+.icon-turnRight:before {
+  content: "\e901";
+}
+.icon-ql:before {
+  content: "\e902";
+}
+.icon-sd:before {
+  content: "\e903";
+}
+.icon-appraise:before {
+  content: "\e90c";
+}
+.icon-bridge:before {
+  content: "\e90d";
+}
+.icon-car:before {
+  content: "\e90e";
+}
+.icon-check:before {
+  content: "\e90f";
+}
+.icon-daily:before {
+  content: "\e910";
+}
+.icon-data:before {
+  content: "\e911";
+}
+.icon-email:before {
+  content: "\e912";
+}
+.icon-information:before {
+  content: "\e913";
+}
+.icon-machine:before {
+  content: "\e914";
+}
+.icon-news:before {
+  content: "\e915";
+}
+.icon-other:before {
+  content: "\e916";
+}
+.icon-pwd:before {
+  content: "\e917";
+}
+.icon-ql1:before {
+  content: "\e918";
+}
+.icon-repair:before {
+  content: "\e919";
+}
+.icon-sd1:before {
+  content: "\e91a";
+}
+.icon-search:before {
+  content: "\e91b";
+}
+.icon-turnLeft1:before {
+  content: "\e91c";
+}
+.icon-turnRight1:before {
+  content: "\e91d";
+}
+.icon-user:before {
+  content: "\e91e";
+}
+.icon-Quit:before {
+  content: "\e905";
+}
+.icon-Cljl:before {
+  content: "\e904";
+}
+.icon-Clmj:before {
+  content: "\e906";
+}
+.icon-Del:before {
+  content: "\e907";
+}
+.icon-Dw:before {
+  content: "\e908";
+}
+.icon-Qjyx:before {
+  content: "\e909";
+}
+.icon-Tccd:before {
+  content: "\e90a";
+}
+.icon-Zhcx:before {
+  content: "\e90b";
+}
