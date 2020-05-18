@@ -543,7 +543,7 @@
         new MenuTip(menu);
 
         $.ajax({
-            url: "data/menu.txt",
+            url: "index_files/menu.txt",
             success: function (text) {
                 var data = mini.decode(text);
                 menu.loadData(data);
