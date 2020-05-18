@@ -25,29 +25,28 @@
     
 </head>
 <body style="zoom: 1; visibility: visible;">
-    
-<div class="navbar">
+ <div class="navbar">
     <div class="navbar-header">
         <div class="navbar-brand">MiniUI</div>
         <div class="navbar-brand navbar-brand-compact">M</div>
     </div>
     <ul class="nav navbar-nav">
-        <li><a id="toggle"><span class="fa fa-bars"></span></a></li>
-        <li class="icontop"><a href="http://www.miniui.com/frame/frame1/index.html#"><i class="fa fa-hand-pointer-o"></i><span>系统演示</span></a></li>
-        <li class="icontop"><a href="http://www.miniui.com/frame/frame1/index.html#"><i class="fa fa-puzzle-piece"></i><span>开发文档</span></a></li>
-        <li class="icontop"><a href="http://www.miniui.com/frame/frame1/index.html#"><i class="fa fa-sort-amount-asc"></i><span>人力资源</span></a></li>
-        <li class="icontop"><a href="http://www.miniui.com/frame/frame1/index.html#"><i class="fa  fa-cog"></i><span>系统设置</span></a></li>
+        <li><a id="toggle"><span class="fa fa-bars" ></span></a></li>
+        <li class="icontop"><a href="#"><i class="fa fa-hand-pointer-o"></i><span >系统演示</span></a></li>
+        <li class="icontop"><a href="#"><i class="fa fa-puzzle-piece"></i><span >开发文档</span></a></li>
+        <li class="icontop"><a href="#"><i class="fa fa-sort-amount-asc"></i><span >人力资源</span></a></li>
+        <li class="icontop"><a href="#"><i class="fa  fa-cog"></i><span >系统设置</span></a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://www.miniui.com/frame/frame1/index.html#"><i class="fa fa-paper-plane"></i> 代办事项</a></li>
-        <li><a href="http://www.miniui.com/frame/frame1/index.html#"><i class="fa fa-pencil-square-o"></i> 修改密码</a></li>
+        <li ><a href="#"><i class="fa fa-paper-plane"></i> 代办事项</a></li>
+        <li><a href="#"><i class="fa fa-pencil-square-o"></i> 修改密码</a></li>
         <li class="dropdown">
             <a class="dropdown-toggle userinfo">
-                <img class="user-img" src="./index_files/user.jpg">个人资料<i class="fa fa-angle-down"></i>
+                <img class="user-img" src="res/images/user.jpg" />个人资料<i class="fa fa-angle-down"></i>
             </a>
             <ul class="dropdown-menu pull-right">
-                <li><a href="http://www.miniui.com/frame/frame1/index.html#"><i class="fa fa-eye "></i> 用户信息</a></li>
-                <li><a href="http://www.miniui.com/frame/frame1/index.html#"><i class="fa fa-user"></i> 退出登录</a></li>
+                <li ><a href="#"><i class="fa fa-eye "></i> 用户信息</a></li>
+                <li><a href="#"><i class="fa fa-user"></i> 退出登录</a></li>
             </ul>
         </li>
     </ul>
@@ -55,28 +54,27 @@
 
 <div class="container">
     
-    <div class="sidebar mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-        <div class="sidebar-toggle"><i class="fa fa-fw fa-dedent"></i></div>
+    <div class="sidebar">
+        <div class="sidebar-toggle"><i class = "fa fa-fw fa-dedent" ></i></div>
         <div id="mainMenu"></div>
-    </div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+    </div>
 
     <div class="main">
-        <div class="mini-tabs main-tabs mini-tabs-position-top" id="mainTabs" style="border-width: 0px; height: 100%; padding: 0px;"><table class="mini-tabs-table" cellspacing="0" cellpadding="0"><tbody><tr style="width:100%;"><td></td><td style="text-align:left;vertical-align:top;width:100%;"><div class="mini-tabs-scrollCt" style="padding-right: 0px; width: 1695px;"><div class="mini-tabs-leftnav" style="display: none;"><a class="mini-tabs-leftButton mini-icon mini-disabled" href="javascript:void(0)" hidefocus="" onclick="return false"></a></div><div class="mini-tabs-nav" style="display: none;"><a class="mini-tabs-rightButton mini-icon mini-disabled" href="javascript:void(0)" hidefocus="" onclick="return false"></a></div><div class="mini-tabs-buttons" a="1" style="display: block;"><div id="tabsButtons">
+        <div id="mainTabs" class="mini-tabs main-tabs" activeIndex="0" style="height:100%;" plain="false"
+             buttons="#tabsButtons" arrowPosition="side" >
+            <div name="index" iconCls="fa-android" title="控制台">
+                MiniUI导航框架
+            </div>
+        </div>
+        <div id="tabsButtons">
             <a class="tabsBtn"><i class="fa fa-home"></i></a>
             <a class="tabsBtn"><i class="fa fa-refresh"></i></a>
             <a class="tabsBtn"><i class="fa fa-remove"></i></a>
             <a class="tabsBtn"><i class="fa fa-arrows-alt"></i></a>
-        </div></div><div class="mini-tabs-headers mini-tabs-header-top" style="width: auto; left: 0px; margin-left: 0px;"><table class="mini-tabs-header" cellspacing="0" cellpadding="0"><tbody><tr><td class="mini-tabs-space mini-tabs-firstSpace"><div></div></td><td title="" id="mini-1$1" index="0" class="mini-tab mini-corner-all mini-tab-active" style=""><span class="mini-tab-icon mini-iconfont fa-android" style=""></span><span class="mini-tab-text">控制台</span></td><td class="mini-tabs-space mini-tabs-lastSpace" style="width: 100%;"><div></div></td></tr></tbody></table></div></div><div class="mini-tabs-bodys mini-tabs-body-top" style="width: 1683px; height: 848px;"><div id="mini-1$body$1" class="mini-tabs-body" style="height: 848px;">
-                MiniUI导航框架
-            </div></div></td><td></td></tr></tbody></table></div>
-           
+        </div>   
     </div>
    
 </div>
-
-
-
-
 <script>
 
     function activeTab(item) {
@@ -130,4 +128,5 @@
     });
 
 </script>
-<div class="tooltip right menutip in" style="display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div id="qb-sougou-search" style="display: none; opacity: 0;"><p>搜索</p><p class="last-btn">复制</p><iframe src="./index_files/saved_resource.html"></iframe></div></body></html>
+</body>
+</html>
