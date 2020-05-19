@@ -19,7 +19,7 @@
         
     </div>
 
-<div id="datagrid1" class="mini-datagrid" style="width:100%;height:250px;" 
+<div id="datagrid1" class="mini-datagrid" style="width:100%;" 
     url="./demo/data/AjaxService.json"
     idField="id" allowResize="true"
     sizeList="[20,30,50,100]" pageSize="20" 
@@ -38,6 +38,8 @@
     </div>
 </div>
     <script type="text/javascript">
+    	var H = parseInt($(window).height())-96;
+    	$("#datagrid1").css("height",H+"px");
           //初始化操作列按钮
 		function draw(e) {
     		var record = e.record;
@@ -80,7 +82,7 @@
 
     </script>
 
-    <div class="description">
+    <div class="description" style="display:none;">
         <h3>Description</h3>
         
     </div>
