@@ -91,7 +91,7 @@
             { "id": "zskgl", iconCls: "fa fa-paw", text: "知识库管理", url: "pages/1.html" },
             { "id": "xxjhzd", iconCls: "fa fa-paw", text: "学习计划制定", url: "pages/1.html",children:[
                 { "id": "xxjhzdsj", iconCls: "fa fa-paw", text: "学习计划制定(省局)", url: "pages/1.html" },
-                { "id": "xxjhzdsj", iconCls: "fa fa-paw", text: "学习计划制定(市局)", url: "pages/1.html" }
+                { "id": "xxjhzdxj", iconCls: "fa fa-paw", text: "学习计划制定(市局)", url: "pages/1.html" }
               ]
             },
             { "id": "xxqktj", iconCls: "fa fa-paw", text: "学习情况统计", url: "pages/1.html" },
@@ -135,7 +135,7 @@
           { "id": "sbbzjh", iconCls: "fa fa-industry", text: "设备补助计划", url: "pages/1.html" ,children:[
               { "id": "gzjh", iconCls: "fa fa-eye", text: "购置计划", url: "pages/1.html" },
               { "id": "bzxbfp", iconCls: "fa fa-eye", text: "补助下拨分配", url: "pages/1.html" },
-              { "id": "ydjh", iconCls: "fa fa-eye", text: "年度统计", url: "pages/1.html" },
+              { "id": "ndjh", iconCls: "fa fa-eye", text: "年度统计", url: "pages/1.html" },
               { "id": "jdjh", iconCls: "fa fa-eye", text: "季度统计", url: "pages/1.html" },
               { "id": "ydjh", iconCls: "fa fa-eye", text: "月度统计", url: "pages/1.html" },
               { "id": "zxsjtj", iconCls: "fa fa-eye", text: "自选时间统计", url: "pages/1.html" }
