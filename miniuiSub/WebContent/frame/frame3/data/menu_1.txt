@@ -1,0 +1,146 @@
+﻿[
+	{ "id": "rcgl", iconCls: "fa fa-send-o", text: "日常管理", children: [
+        { "id": "jckh", iconCls: "fa fa-desktop", text: "检查考核", url: "pages/1.html" ,children:[
+          {"id": "khbzsz", iconCls: "fa fa-assistive-listening-systems", text: "考核标准设置" , url: "pages/1.html"},
+            { "id": "khtb", iconCls: "fa fa-assistive-listening-systems", text: "考核填报" , url: "pages/1.html",children:[
+                  {"id": "khjgrl", iconCls: "fa fa-assistive-listening-systems", text: "考核结果录入" , url: "pages/1.html"},
+                  { "id": "khtbrl", iconCls: "fa fa-assistive-listening-systems", text: "考核通报录入" , url: "pages/1.html"}
+                ]
+              },
+              { "id": "khjgcx", iconCls: "fa fa-assistive-listening-systems", text: "考核结果查询" , url: "pages/1.html",children:[
+                  {"id": "bdwkhjgcx", iconCls: "fa fa-assistive-listening-systems", text: "本单位考核结果查询" , url: "pages/1.html"},
+                  { "id": "khtbcx", iconCls: "fa fa-assistive-listening-systems", text: "考核通报查询" , url: "pages/1.html"},
+                  { "id": "zjkhjgcx", iconCls: "fa fa-assistive-listening-systems", text: "逐级考核结果查询" , url: "pages/1.html",children:[
+                      {"id": "gljkhxd", iconCls: "fa fa-assistive-listening-systems", text: "管理局考核县段一览" , url: "pages/1.html"},
+                      { "id": "dbzkh", iconCls: "fa fa-assistive-listening-systems", text: "道班长考核一览" , url: "pages/1.html"},
+                      { "id": "byzrr", iconCls: "fa fa-assistive-listening-systems", text: "保养责任人考核一览" , url: "pages/1.html"},
+                      { "id": "xdddbkh", iconCls: "fa fa-assistive-listening-systems", text: "县段对道班考核一览" , url: "pages/1.html"}
+                    ]
+                  } 
+                ]
+              }
+          ]
+        },
+        { "id": "rcyhgl", iconCls: "fa fa-search", text: "日常养护管理", url: "pages/1.html",children:[
+            { "id": "rcyh", iconCls: "fa fa-vcard", text: "日常养护", url: "pages/1.html" },
+            { "id": "tzd", iconCls: "fa fa-vcard", text: "通知单", url: "pages/1.html" },
+            { "id": "dbrz", iconCls: "fa fa-vcard", text: "道班日志", url: "pages/1.html" },
+            { "id": "cgcqtj", iconCls: "fa fa-vcard", text: "出工出勤统计", url: "pages/1.html" },
+            { "id": "rcyhsjsz", iconCls: "fa fa-vcard", text: "日常养护事件设置", url: "pages/1.html",children:[
+                { "id": "sjczzqsz", iconCls: "fa fa-assistive-listening-systems", text: "事件处置周期设置" , url: "pages/1.html"},
+                { "id": "jjr", iconCls: "fa fa-assistive-listening-systems", text: "节假日" , url: "pages/1.html"}
+              ]
+            }
+          ]
+        },
+         { "id": "zdyrw", iconCls: "fa fa-window-restore", text: "自定义任务", children: [
+              { "id": "cxbzgl", iconCls: "fa fa-assistive-listening-systems", text: "除雪保畅管理" , url: "pages/1.html"},
+              { "id": "zdrwgl", iconCls: "fa fa-vcard", text: "自定任务管理", url: "pages/1.html" },
+              { "id": "zhfzgl", iconCls: "fa fa-file-excel-o", text: "灾害防治管理" , url: "pages/1.html"},
+              { "id": "dzxgcjdgl", iconCls: "fa fa-file-excel-o", text: "大中修工程进度管理" , url: "pages/1.html"},
+              { "id": "wqgzgcjhgl", iconCls: "fa fa-file-excel-o", text: "危桥改造工程计划管理" , url: "pages/1.html"},
+              { "id": "zhfzgcjhgl", iconCls: "fa fa-file-excel-o", text: "灾害防治工程计划管理" , url: "pages/1.html"},
+              { "id": "aqfhgcjzgl", iconCls: "fa fa-modx", text: "安全防护工程进展管理" , url: "pages/1.html"}
+            ]
+         }
+	    ]
+	},
+    { "id": "xxgl", iconCls: "fa fa-desktop", text: "小修管理, children: [
+        { "id": "xxxmjfygl", iconCls: "fa fa-leaf", text: "小修项目及费用设置", url: "pages/1.html" },
+        { "id": "xxgl", iconCls: "fa fa-book", text: "小修管理", url: "pages/1.html",children:[
+            { "id": "xxcs", iconCls: "fa fa-sign-out", text: "小修初审", url: "pages/1.html" },
+            { "id": "bhcljxxsb", iconCls: "fa fa-sign-out", text: "病害处理及小修申报", url: "pages/1.html" },
+            { "id": "zxjhsb", iconCls: "fa fa-sign-out", text: "专项计划申报", url: "pages/1.html" },
+            { "id": "xxxmsh", iconCls: "fa fa-sign-out", text: "小修项目审核", url: "pages/1.html" },
+            { "id": "sqys", iconCls: "fa fa-sign-out", text: "申请验收", url: "pages/1.html" },
+            { "id": "xxxmys", iconCls: "fa fa-sign-out", text: "小修项目验收", url: "pages/1.html" },
+            { "id": "jlzf", iconCls: "fa fa-sign-out", text: "计量支付", url: "pages/1.html" },
+            { "id": "jscxjcl", iconCls: "fa fa-sign-out", text: "结算查询及处理", url: "pages/1.html" },
+            { "id": "shbtg", iconCls: "fa fa-sign-out", text: "审核不通过", url: "pages/1.html" }
+          ]
+        },
+        { "id": "xxmx", iconCls: "fa fa-barcode", text: "小修明细", url: "pages/1.html",children:[
+            { "id": "bhsjcx", iconCls: "fa fa-sign-out", text: "病害数据查询", url: "pages/1.html" },
+            { "id": "xxdcx", iconCls: "fa fa-sign-out", text: "小修单查询", url: "pages/1.html" },
+            { "id": "xxgccx", iconCls: "fa fa-sign-out", text: "小修工程查询", url: "pages/1.html" }
+          ]
+        },
+        { "id": "tjbb", iconCls: "fa fa-navicon", text: "统计报表", url: "pages/1.html" ,children: [
+                  { "id": "bhcjgzyr", iconCls: "fa fa-sign-out", text: "病害采集工作一览", url: "pages/1.html" },
+                  { "id": "gsgxxxgcwcqktj", iconCls: "fa fa-sign-out", text: "国省干线小修工程完成情况统计", url: "pages/1.html" },
+                  { "id": "gsxxgcwcqktj", iconCls: "fa fa-sign-out", text: "高速小修工程完成情况统计", url: "pages/1.html" }
+            ]
+        }
+      ]
+    },
+{ "id": "qt", iconCls: "fa fa-coffee",  text: "其它", children: [
+         { "id": "lxgl", iconCls: "fa fa-sitemap", text: "路线管理", url: "pages/1.html" },
+         { "id": "dmgl", iconCls: "fa fa-th-list", text: "代码管理", url: "pages/1.html" },
+         { "id": "yhdlmmxg", iconCls: "fa fa-graduation-cap", text: "用户登录密码修改", url: "pages/1.html" },
+         { "id": "tzwh", iconCls: "fa fa-user", text: "通知维护", url: "pages/1.html" },
+         { "id": "jcsjxgsjsz", iconCls: "fa fa-paw", text: "基础数据修改时间设置", url: "pages/1.html" },
+         { "id": "zxyhqk", iconCls: "fa fa-paw", text: "在线用户情况", url: "pages/1.html" },
+         { "id": "zhcx", iconCls: "fa fa-paw", text: "综合查询", url: "pages/1.html" },
+         { "id": "hywjgl", iconCls: "fa fa-paw", text: "会议文件管理", url: "pages/1.html" },
+         { "id": "khyhgl", iconCls: "fa fa-paw", text: "考核用户管理", url: "pages/1.html" }
+         
+    ]
+},
+{ "id": "kspx", iconCls: "fa fa-table", text: "培训考试", children: [
+        { "id": "zxpx", iconCls: "fa fa-puzzle-piece", text: "在线培训", url: "pages/1.html",children:[
+            { "id": "zskgl", iconCls: "fa fa-paw", text: "知识库管理", url: "pages/1.html" },
+            { "id": "xxjhzd", iconCls: "fa fa-paw", text: "学习计划制定", url: "pages/1.html",children:[
+                { "id": "xxjhzdsj", iconCls: "fa fa-paw", text: "学习计划制定(省局)", url: "pages/1.html" },
+                { "id": "xxjhzdsj", iconCls: "fa fa-paw", text: "学习计划制定(市局)", url: "pages/1.html" }
+              ]
+            },
+            { "id": "xxqktj", iconCls: "fa fa-paw", text: "学习情况统计", url: "pages/1.html" },
+            { "id": "wdxxrw", iconCls: "fa fa-paw", text: "我的学习任务", url: "pages/1.html" }
+          ]
+        },
+        { "id": "zxks", iconCls: "fa fa-list-alt", text: "在线考试", children: [
+              { "id": "tkxxgl", iconCls: "fa fa-address-card-o", text: "题库信息管理", url: "pages/1.html" },
+              { "id": "sjxxgl", iconCls: "fa fa-address-book", text: "试卷信息管理", url: "pages/1.html" },
+              { "id": "zxksgl", iconCls: "fa fa-user-circle", text: "在线考试管理", url: "pages/1.html" },
+              { "id": "cjxxgl", iconCls: "fa fa-user-circle", text: "成绩信息管理", url: "pages/1.html" },
+              { "id": "pxkhtj", iconCls: "fa fa-bandcamp", text: "培训考核统计", url: "pages/1.html" }
+            ]
+        }
+    ]
+},
+{ "id": "jxsbgl", iconCls: "fa fa-share-alt", text: "机械设备管理", children: [
+          { "id": "dagl", iconCls: "fa fa-share-alt", text: "档案管理", url: "pages/1.html",children:[
+              { "id": "sbdagl", iconCls: "fa fa-file-word-o", text: "设备档案管理", url: "pages/1.html" },
+              { "id": "zbgl", iconCls: "fa fa-file-word-o", text: "租赁管理", url: "pages/1.html" },
+              { "id": "rydagl", iconCls: "fa fa-file-word-o", text: "人员档案管理", url: "pages/1.html" },
+              { "id": "sbfldmgl", iconCls: "fa fa-file-word-o", text: "设备分类代码管理", url: "pages/1.html" }
+            ]
+          },
+          { "id": "sygl", iconCls: "fa fa-file-word-o", text: "使用管理", url: "pages/1.html",children:[
+              { "id": "sbyzjl", iconCls: "fa fa-coffee", text: "设备运转记录", url: "pages/1.html" },
+              { "id": "sggl", iconCls: "fa fa-coffee", text: "事故管理", url: "pages/1.html" }
+            ]
+          },
+          { "id": "wxbygl", iconCls: "fa fa-coffee", text: "维修保养管理", url: "pages/1.html" ,children:[
+              { "id": "bxjhgl", iconCls: "fa fa-eye", text: "保修计划管理", url: "pages/1.html" },
+              { "id": "bygl", iconCls: "fa fa-eye", text: "保养管理", url: "pages/1.html" },
+              { "id": "dzxgl", iconCls: "fa fa-eye", text: "大中修管理", url: "pages/1.html" },
+              { "id": "wxgl", iconCls: "fa fa-eye", text: "维修管理", url: "pages/1.html" }
+            ]
+          },
+          { "id": "bfgl", iconCls: "fa fa-eye", text: "报废管理", url: "pages/1.html",children:[
+              { "id": "sbbf", iconCls: "fa fa-eye", text: "设备报废", url: "pages/1.html" }
+            ]
+          },
+          { "id": "sbbzjh", iconCls: "fa fa-industry", text: "设备补助计划", url: "pages/1.html" ,children:[
+              { "id": "gzjh", iconCls: "fa fa-eye", text: "购置计划", url: "pages/1.html" },
+              { "id": "bzxbfp", iconCls: "fa fa-eye", text: "补助下拨分配", url: "pages/1.html" },
+              { "id": "ydjh", iconCls: "fa fa-eye", text: "年度统计", url: "pages/1.html" },
+              { "id": "jdjh", iconCls: "fa fa-eye", text: "季度统计", url: "pages/1.html" },
+              { "id": "ydjh", iconCls: "fa fa-eye", text: "月度统计", url: "pages/1.html" },
+              { "id": "zxsjtj", iconCls: "fa fa-eye", text: "自选时间统计", url: "pages/1.html" }
+            ]
+          }
+    ]
+}
+]
