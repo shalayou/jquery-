@@ -18,8 +18,12 @@
     <style>
         .mini-tabs-scrollCt{background: #fff;}
         .mini-tabs .mini-tab{background: #fff;}
-        .mini-tab-active{background:#f5f5f5 !important;}
+        .mini-tab-active{background:#f5f5f5 !important;border-bottom-color:#f5f5f5 !important;}
         .sidebar{background: #203a59 !important;}
+        .navbar-nav > li > a{background: transparent;color:#f5f5f5;}
+        .navbar-nav > li > a:hover{background: rgba(23,86,163,0.85);color:#fff;}
+        .navbar-nav li.open a.dropdown-toggle{background: transparent;color:#f5f5f5;}
+        .mini-tabs-body-top{background: #f5f5f5;}
     </style>
 </head>
 <body>
@@ -32,7 +36,7 @@
 <div class="container">
     <div class="navbar" style="background:url(topRight-1.jpg);">
         <div class="navbar-brand" style="background:url(logo.png) no-repeat left 20px center;width:355px;height:50px;"></div>
-        <ul class="nav navbar-nav navbar-right" style="background: transparent;">
+        <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><i class="fa fa-paper-plane"></i> 代办事项</a></li>
             <li><a href="#"><i class="fa fa-pencil-square-o"></i> 修改密码</a></li>
             <li class="dropdown">
