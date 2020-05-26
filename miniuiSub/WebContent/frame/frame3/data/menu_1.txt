@@ -33,7 +33,7 @@
             }
           ]
         },
-         { "id": "zdyrw", iconCls: "fa fa-window-restore", text: "自定义任务", children: [
+         { "id": "zdyrw", iconCls: "fa fa-window-restore", text: "自定义任务",children: [
               { "id": "cxbzgl", iconCls: "fa fa-assistive-listening-systems", text: "除雪保畅管理" , url: "pages/1.html"},
               { "id": "zdrwgl", iconCls: "fa fa-vcard", text: "自定任务管理", url: "pages/1.html" },
               { "id": "zhfzgl", iconCls: "fa fa-file-excel-o", text: "灾害防治管理" , url: "pages/1.html"},
@@ -45,7 +45,7 @@
          }
 	    ]
 	},
-    { "id": "xxgl", iconCls: "fa fa-desktop", text: "小修管理, children: [
+    { "id": "xxgl", iconCls: "fa fa-desktop", text: "小修管理",children: [
         { "id": "xxxmjfygl", iconCls: "fa fa-leaf", text: "小修项目及费用设置", url: "pages/1.html" },
         { "id": "xxgl", iconCls: "fa fa-book", text: "小修管理", url: "pages/1.html",children:[
             { "id": "xxcs", iconCls: "fa fa-sign-out", text: "小修初审", url: "pages/1.html" },
