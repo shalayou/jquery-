@@ -1,146 +1,868 @@
-﻿[
-	{ "id": "rcgl", iconCls: "fa fa-send-o", text: "日常管理", children: [
-        { "id": "jckh", iconCls: "fa fa-desktop", text: "检查考核", url: "pages/1.html" ,children:[
-          {"id": "khbzsz", iconCls: "fa fa-assistive-listening-systems", text: "考核标准设置" , url: "pages/1.html"},
-            { "id": "khtb", iconCls: "fa fa-assistive-listening-systems", text: "考核填报" , url: "pages/1.html",children:[
-                  {"id": "khjgrl", iconCls: "fa fa-assistive-listening-systems", text: "考核结果录入" , url: "pages/1.html"},
-                  { "id": "khtbrl", iconCls: "fa fa-assistive-listening-systems", text: "考核通报录入" , url: "pages/1.html"}
-                ]
-              },
-              { "id": "khjgcx", iconCls: "fa fa-assistive-listening-systems", text: "考核结果查询" , url: "pages/1.html",children:[
-                  {"id": "bdwkhjgcx", iconCls: "fa fa-assistive-listening-systems", text: "本单位考核结果查询" , url: "pages/1.html"},
-                  { "id": "khtbcx", iconCls: "fa fa-assistive-listening-systems", text: "考核通报查询" , url: "pages/1.html"},
-                  { "id": "zjkhjgcx", iconCls: "fa fa-assistive-listening-systems", text: "逐级考核结果查询" , url: "pages/1.html",children:[
-                      {"id": "gljkhxd", iconCls: "fa fa-assistive-listening-systems", text: "管理局考核县段一览" , url: "pages/1.html"},
-                      { "id": "dbzkh", iconCls: "fa fa-assistive-listening-systems", text: "道班长考核一览" , url: "pages/1.html"},
-                      { "id": "byzrr", iconCls: "fa fa-assistive-listening-systems", text: "保养责任人考核一览" , url: "pages/1.html"},
-                      { "id": "xdddbkh", iconCls: "fa fa-assistive-listening-systems", text: "县段对道班考核一览" , url: "pages/1.html"}
-                    ]
-                  } 
-                ]
-              }
-          ]
-        },
-        { "id": "rcyhgl", iconCls: "fa fa-search", text: "日常养护管理", url: "pages/1.html",children:[
-            { "id": "rcyh", iconCls: "fa fa-vcard", text: "日常养护", url: "pages/1.html" },
-            { "id": "tzd", iconCls: "fa fa-vcard", text: "通知单", url: "pages/1.html" },
-            { "id": "dbrz", iconCls: "fa fa-vcard", text: "道班日志", url: "pages/1.html" },
-            { "id": "cgcqtj", iconCls: "fa fa-vcard", text: "出工出勤统计", url: "pages/1.html" },
-            { "id": "rcyhsjsz", iconCls: "fa fa-vcard", text: "日常养护事件设置", url: "pages/1.html",children:[
-                { "id": "sjczzqsz", iconCls: "fa fa-assistive-listening-systems", text: "事件处置周期设置" , url: "pages/1.html"},
-                { "id": "jjr", iconCls: "fa fa-assistive-listening-systems", text: "节假日" , url: "pages/1.html"}
-              ]
-            }
-          ]
-        },
-         { "id": "zdyrw", iconCls: "fa fa-window-restore", text: "自定义任务",children: [
-              { "id": "cxbzgl", iconCls: "fa fa-assistive-listening-systems", text: "除雪保畅管理" , url: "pages/1.html"},
-              { "id": "zdrwgl", iconCls: "fa fa-vcard", text: "自定任务管理", url: "pages/1.html" },
-              { "id": "zhfzgl", iconCls: "fa fa-file-excel-o", text: "灾害防治管理" , url: "pages/1.html"},
-              { "id": "dzxgcjdgl", iconCls: "fa fa-file-excel-o", text: "大中修工程进度管理" , url: "pages/1.html"},
-              { "id": "wqgzgcjhgl", iconCls: "fa fa-file-excel-o", text: "危桥改造工程计划管理" , url: "pages/1.html"},
-              { "id": "zhfzgcjhgl", iconCls: "fa fa-file-excel-o", text: "灾害防治工程计划管理" , url: "pages/1.html"},
-              { "id": "aqfhgcjzgl", iconCls: "fa fa-modx", text: "安全防护工程进展管理" , url: "pages/1.html"}
-            ]
-         }
-	    ]
-	},
-    { "id": "xxgl", iconCls: "fa fa-desktop", text: "小修管理",children: [
-        { "id": "xxxmjfygl", iconCls: "fa fa-leaf", text: "小修项目及费用设置", url: "pages/1.html" },
-        { "id": "xxgl", iconCls: "fa fa-book", text: "小修管理", url: "pages/1.html",children:[
-            { "id": "xxcs", iconCls: "fa fa-sign-out", text: "小修初审", url: "pages/1.html" },
-            { "id": "bhcljxxsb", iconCls: "fa fa-sign-out", text: "病害处理及小修申报", url: "pages/1.html" },
-            { "id": "zxjhsb", iconCls: "fa fa-sign-out", text: "专项计划申报", url: "pages/1.html" },
-            { "id": "xxxmsh", iconCls: "fa fa-sign-out", text: "小修项目审核", url: "pages/1.html" },
-            { "id": "sqys", iconCls: "fa fa-sign-out", text: "申请验收", url: "pages/1.html" },
-            { "id": "xxxmys", iconCls: "fa fa-sign-out", text: "小修项目验收", url: "pages/1.html" },
-            { "id": "jlzf", iconCls: "fa fa-sign-out", text: "计量支付", url: "pages/1.html" },
-            { "id": "jscxjcl", iconCls: "fa fa-sign-out", text: "结算查询及处理", url: "pages/1.html" },
-            { "id": "shbtg", iconCls: "fa fa-sign-out", text: "审核不通过", url: "pages/1.html" }
-          ]
-        },
-        { "id": "xxmx", iconCls: "fa fa-barcode", text: "小修明细", url: "pages/1.html",children:[
-            { "id": "bhsjcx", iconCls: "fa fa-sign-out", text: "病害数据查询", url: "pages/1.html" },
-            { "id": "xxdcx", iconCls: "fa fa-sign-out", text: "小修单查询", url: "pages/1.html" },
-            { "id": "xxgccx", iconCls: "fa fa-sign-out", text: "小修工程查询", url: "pages/1.html" }
-          ]
-        },
-        { "id": "tjbb", iconCls: "fa fa-navicon", text: "统计报表", url: "pages/1.html" ,children: [
-                  { "id": "bhcjgzyr", iconCls: "fa fa-sign-out", text: "病害采集工作一览", url: "pages/1.html" },
-                  { "id": "gsgxxxgcwcqktj", iconCls: "fa fa-sign-out", text: "国省干线小修工程完成情况统计", url: "pages/1.html" },
-                  { "id": "gsxxgcwcqktj", iconCls: "fa fa-sign-out", text: "高速小修工程完成情况统计", url: "pages/1.html" }
-            ]
-        }
-      ]
-    },
-{ "id": "qt", iconCls: "fa fa-coffee",  text: "其它", children: [
-         { "id": "lxgl", iconCls: "fa fa-sitemap", text: "路线管理", url: "pages/1.html" },
-         { "id": "dmgl", iconCls: "fa fa-th-list", text: "代码管理", url: "pages/1.html" },
-         { "id": "yhdlmmxg", iconCls: "fa fa-graduation-cap", text: "用户登录密码修改", url: "pages/1.html" },
-         { "id": "tzwh", iconCls: "fa fa-user", text: "通知维护", url: "pages/1.html" },
-         { "id": "jcsjxgsjsz", iconCls: "fa fa-paw", text: "基础数据修改时间设置", url: "pages/1.html" },
-         { "id": "zxyhqk", iconCls: "fa fa-paw", text: "在线用户情况", url: "pages/1.html" },
-         { "id": "zhcx", iconCls: "fa fa-paw", text: "综合查询", url: "pages/1.html" },
-         { "id": "hywjgl", iconCls: "fa fa-paw", text: "会议文件管理", url: "pages/1.html" },
-         { "id": "khyhgl", iconCls: "fa fa-paw", text: "考核用户管理", url: "pages/1.html" }
-         
-    ]
-},
-{ "id": "kspx", iconCls: "fa fa-table", text: "培训考试", children: [
-        { "id": "zxpx", iconCls: "fa fa-puzzle-piece", text: "在线培训", url: "pages/1.html",children:[
-            { "id": "zskgl", iconCls: "fa fa-paw", text: "知识库管理", url: "pages/1.html" },
-            { "id": "xxjhzd", iconCls: "fa fa-paw", text: "学习计划制定", url: "pages/1.html",children:[
-                { "id": "xxjhzdsj", iconCls: "fa fa-paw", text: "学习计划制定(省局)", url: "pages/1.html" },
-                { "id": "xxjhzdxj", iconCls: "fa fa-paw", text: "学习计划制定(市局)", url: "pages/1.html" }
-              ]
-            },
-            { "id": "xxqktj", iconCls: "fa fa-paw", text: "学习情况统计", url: "pages/1.html" },
-            { "id": "wdxxrw", iconCls: "fa fa-paw", text: "我的学习任务", url: "pages/1.html" }
-          ]
-        },
-        { "id": "zxks", iconCls: "fa fa-list-alt", text: "在线考试", children: [
-              { "id": "tkxxgl", iconCls: "fa fa-address-card-o", text: "题库信息管理", url: "pages/1.html" },
-              { "id": "sjxxgl", iconCls: "fa fa-address-book", text: "试卷信息管理", url: "pages/1.html" },
-              { "id": "zxksgl", iconCls: "fa fa-user-circle", text: "在线考试管理", url: "pages/1.html" },
-              { "id": "cjxxgl", iconCls: "fa fa-user-circle", text: "成绩信息管理", url: "pages/1.html" },
-              { "id": "pxkhtj", iconCls: "fa fa-bandcamp", text: "培训考核统计", url: "pages/1.html" }
-            ]
-        }
-    ]
-},
-{ "id": "jxsbgl", iconCls: "fa fa-share-alt", text: "机械设备管理", children: [
-          { "id": "dagl", iconCls: "fa fa-share-alt", text: "档案管理", url: "pages/1.html",children:[
-              { "id": "sbdagl", iconCls: "fa fa-file-word-o", text: "设备档案管理", url: "pages/1.html" },
-              { "id": "zbgl", iconCls: "fa fa-file-word-o", text: "租赁管理", url: "pages/1.html" },
-              { "id": "rydagl", iconCls: "fa fa-file-word-o", text: "人员档案管理", url: "pages/1.html" },
-              { "id": "sbfldmgl", iconCls: "fa fa-file-word-o", text: "设备分类代码管理", url: "pages/1.html" }
-            ]
-          },
-          { "id": "sygl", iconCls: "fa fa-file-word-o", text: "使用管理", url: "pages/1.html",children:[
-              { "id": "sbyzjl", iconCls: "fa fa-coffee", text: "设备运转记录", url: "pages/1.html" },
-              { "id": "sggl", iconCls: "fa fa-coffee", text: "事故管理", url: "pages/1.html" }
-            ]
-          },
-          { "id": "wxbygl", iconCls: "fa fa-coffee", text: "维修保养管理", url: "pages/1.html" ,children:[
-              { "id": "bxjhgl", iconCls: "fa fa-eye", text: "保修计划管理", url: "pages/1.html" },
-              { "id": "bygl", iconCls: "fa fa-eye", text: "保养管理", url: "pages/1.html" },
-              { "id": "dzxgl", iconCls: "fa fa-eye", text: "大中修管理", url: "pages/1.html" },
-              { "id": "wxgl", iconCls: "fa fa-eye", text: "维修管理", url: "pages/1.html" }
-            ]
-          },
-          { "id": "bfgl", iconCls: "fa fa-eye", text: "报废管理", url: "pages/1.html",children:[
-              { "id": "sbbf", iconCls: "fa fa-eye", text: "设备报废", url: "pages/1.html" }
-            ]
-          },
-          { "id": "sbbzjh", iconCls: "fa fa-industry", text: "设备补助计划", url: "pages/1.html" ,children:[
-              { "id": "gzjh", iconCls: "fa fa-eye", text: "购置计划", url: "pages/1.html" },
-              { "id": "bzxbfp", iconCls: "fa fa-eye", text: "补助下拨分配", url: "pages/1.html" },
-              { "id": "ndjh", iconCls: "fa fa-eye", text: "年度统计", url: "pages/1.html" },
-              { "id": "jdjh", iconCls: "fa fa-eye", text: "季度统计", url: "pages/1.html" },
-              { "id": "ydjh", iconCls: "fa fa-eye", text: "月度统计", url: "pages/1.html" },
-              { "id": "zxsjtj", iconCls: "fa fa-eye", text: "自选时间统计", url: "pages/1.html" }
-            ]
-          }
-    ]
-}
-]
+[{
+	"id": "01",
+	"text": "基础数据",
+	"iconCls": "icon-data",
+	"children": [{
+		"children": [{
+			"children": [{
+				"children": [],
+				"id": "01010101",
+				"text": "基础统计资料"
+			}, {
+				"children": [],
+				"id": "01010102",
+				"text": "基础卡片资料"
+			}, {
+				"children": [],
+				"id": "01010103",
+				"text": "技术状况评定资料"
+			}],
+			"id": "010101",
+			"text": "资料录入"
+		}, {
+			"children": [{
+				"children": [],
+				"id": "01010201",
+				"text": "基础统计资料"
+			}, {
+				"children": [],
+				"id": "01010202",
+				"text": "基础卡片资料"
+			}],
+			"id": "010102",
+			"text": "资料统计"
+		}],
+		"id": "0101",
+		"text": "普通国省干线公路资料"
+	}, {
+		"children": [{
+			"children": [{
+				"children": [],
+				"id": "01020103",
+				"text": "基础统计资料"
+			}, {
+				"children": [],
+				"id": "01020104",
+				"text": "基础卡片资料"
+			}],
+			"id": "010201",
+			"text": "资料录入"
+		}, {
+			"children": [{
+				"children": [],
+				"id": "01020203",
+				"text": "基础统计资料"
+			}, {
+				"children": [],
+				"id": "01020204",
+				"text": "基础卡片资料"
+			}],
+			"id": "010202",
+			"text": "资料统计"
+		}],
+		"id": "0102",
+		"text": "高速公路资料"
+	}]
+}, {
+	"id": "02",
+	"text": "检查考核",
+	"iconCls": "icon-daily",
+	"children": [{
+		"children": [{
+			"children": [{
+				"children": [],
+				"id": "02010101",
+				"text": "考核数据录入"
+			}, {
+				"children": [],
+				"id": "02010102",
+				"text": "考核结果查询"
+			}],
+			"id": "020101",
+			"text": "普通国省干线公路"
+		}, {
+			"children": [{
+				"children": [],
+				"id": "02010201",
+				"text": "考核数据录入"
+			}, {
+				"children": [],
+				"id": "02010202",
+				"text": "考核结果查询"
+			}],
+			"id": "020102",
+			"text": "高速公路"
+		}],
+		"id": "0201",
+		"text": "日常检查考核"
+	}, {
+		"children": [{
+			"children": [{
+				"url": "/rc/bz/bzkhzb.jsp",
+				"id": "02020201",
+				"text": "考核结果录入"
+			}, {
+				"url": "/khjg/khjg.jsp",
+				"id": "02020202",
+				"text": "考核通报录入"
+			}],
+			"id": "020202",
+			"text": "考核数据录入"
+		}, {
+			"children": [{
+				"url": "tj/kh/bdwkhcx.jsp",
+				"id": "02020501",
+				"text": "本单位考核结果查询"
+			}, {
+				"url": "/khtj/khtj.jsp",
+				"id": "02020502",
+				"text": "考核通报查询"
+			}, {
+				"children": [],
+				"id": "02020503",
+				"text": "逐级考核结果查询"
+			}],
+			"id": "020205",
+			"text": "考核结果查询"
+		}, {
+			"url": "/rc/bz/bzsz.jsp",
+			"id": "020210",
+			"text": "考核标准设置"
+		}],
+		"id": "0202",
+		"text": "月度检查考核"
+	}, {
+		"children": [{
+			"url": "/phaseTwo/examinationManagement/trainManagement/konwledgeList.jsp",
+			"id": "020301",
+			"text": "知识库管理"
+		}, {
+			"url": "/phaseTwo/examinationManagement/trainManagement/taskManagement.jsp",
+			"id": "020302",
+			"text": "定制学习任务"
+		}, {
+			"url": "/phaseTwo/examinationManagement/trainManagement/taskList.jsp",
+			"id": "020303",
+			"text": "在线学习"
+		}, {
+			"url": "/phaseTwo/examinationManagement/trainManagement/situationList.jsp",
+			"id": "020304",
+			"text": "学习进度管理"
+		}, {
+			"url": "/phaseTwo/examinationManagement/trainManagement/knowledgeExamine.jsp",
+			"id": "020305",
+			"text": "知识库审核"
+		}, {
+			"url": "/phaseTwo/examinationManagement/trainManagement/appointManagement.jsp",
+			"id": "020306",
+			"text": "指定任务管理"
+		}, {
+			"url": "/phaseTwo/examinationManagement/trainManagement/extendLearned.jsp",
+			"id": "020307",
+			"text": "拓展学习"
+		}, {
+			"url": "/phaseTwo/examinationManagement/trainManagement/optionalSituationList.jsp",
+			"id": "020308",
+			"text": "自学情况管理"
+		}],
+		"id": "0203",
+		"text": "培训管理"
+	}, {
+		"children": [{
+			"url": "/phaseTwo/examination/questionBank_Manager.jsp",
+			"id": "020401",
+			"text": "题库信息管理"
+		}, {
+			"url": "/phaseTwo/examination/papersset_Manager.jsp",
+			"id": "020402",
+			"text": "试卷信息管理"
+		}, {
+			"url": "/phaseTwo/examination/onlineExam_Manager.jsp",
+			"id": "020403",
+			"text": "在线考试管理"
+		}, {
+			"url": "/phaseTwo/examination/examscore_Manager.jsp",
+			"id": "020404",
+			"text": "成绩信息管理"
+		}, {
+			"url": "/phaseTwo/examination/statistics.jsp",
+			"id": "020405",
+			"text": "统计分析"
+		}, {
+			"url": "/phaseTwo/examination/questionTypes_Manager.jsp",
+			"id": "020406",
+			"text": "分值设置"
+		}],
+		"id": "0204",
+		"text": "考核管理"
+	}]
+}, {
+	"id": "03",
+	"text": "日常管理",
+	"iconCls": "icon-fixed",
+	"children": [{
+		"children": [{
+			"url": "/ryda/ryda.jsp",
+			"id": "030101",
+			"text": "人员档案录入"
+		}, {
+			"url": "/byzrr/byzrr.jsp",
+			"id": "030102",
+			"text": "保养责任人路段划分"
+		}, {
+			"url": "/pda/ybywcqktb_m.jsp",
+			"id": "030103",
+			"text": "月保养完成情况"
+		}, {
+			"url": "/pda/cgcqtb_m.jsp",
+			"id": "030104",
+			"text": "出工出勤"
+		}],
+		"id": "0301",
+		"text": "国省干线公路管理资料录入"
+	}, {
+		"children": [{
+			"url": "tj/rydatj.jsp",
+			"id": "030201",
+			"text": "人员档案统计一览"
+		}, {
+			"url": "tj/byzzr.jsp",
+			"id": "030202",
+			"text": "保养责任人统计一览"
+		}, {
+			"url": "tj/ry/ybywcqk.jsp",
+			"id": "030203",
+			"text": "月保养完成情况统计一览"
+		}, {
+			"url": "tj/ry/cgcq.jsp",
+			"id": "030204",
+			"text": "出工出勤情况统计一览"
+		}],
+		"id": "0302",
+		"text": "国省干线公路资料汇总"
+	}, {
+		"children": [{
+			"url": "/map/xslc.jsp",
+			"id": "GPSXSLC",
+			"text": "GPS巡视里程"
+		}, {
+			"url": "/map/xcrtj.jsp",
+			"id": "GPSXCRTJ",
+			"text": "巡查日统计"
+		}, {
+			"url": "/map/xcytj.jsp",
+			"id": "GPSXCYTJ",
+			"text": "巡查月统计"
+		}, {
+			"url": "/map/xcylb.jsp",
+			"id": "GPSXSYLB",
+			"text": "GPS巡视一览表"
+		}],
+		"id": "xsgl",
+		"text": "巡视管理"
+	}, {
+		"children": [{
+			"children": [{
+				"url": "bthpzhd/bthpzhd.jsp",
+				"id": "03040101",
+				"text": "崩塌滑坡类灾害"
+			}, {
+				"url": "lslzhd/lslzhd.jsp",
+				"id": "03040102",
+				"text": "泥石流类灾害"
+			}, {
+				"url": "ljcxhy/ljcxhy.jsp",
+				"id": "03040103",
+				"text": "路基沉陷滑移类灾害"
+			}, {
+				"url": "/dzzh/dzzh_zb.jsp",
+				"id": "03040105",
+				"text": "地质灾害路段监测记录"
+			}],
+			"id": "030401",
+			"text": "资料录入"
+		}, {
+			"children": [{
+				"url": "tj/xxcj/dzzh.jsp",
+				"id": "03040205",
+				"text": "地质灾害路段监测一览"
+			}],
+			"id": "030402",
+			"text": "资料查询"
+		}],
+		"id": "0304",
+		"text": "危险灾害路段管理"
+	}, {
+		"children": [{
+			"url": "rcyh/rcyh.jsp",
+			"id": "030501",
+			"text": "日常养护"
+		}, {
+			"url": "xxgl/tzd.jsp",
+			"id": "030502",
+			"text": "通知单"
+		}, {
+			"url": "rc/dbrz/menu/dbrz.jsp",
+			"id": "030503",
+			"text": "道班日志"
+		}, {
+			"url": "rc/xcgj/menu/xcgj.jsp",
+			"id": "030504",
+			"text": "巡查轨迹统计"
+		}, {
+			"url": "/rc/sjczzq/menu/sjczzq.jsp",
+			"id": "030505",
+			"text": "事件处置周期设置"
+		}, {
+			"url": "/rc/dbrz/menu/cgcq.jsp",
+			"id": "030506",
+			"text": "出工出勤统计"
+		}, {
+			"url": "/rc/jjr/menu/jjr.jsp",
+			"id": "030507",
+			"text": "节假日"
+		}],
+		"id": "0305",
+		"text": "日常养护管理"
+	}, {
+		"children": [{
+			"url": "xxgl/gztz.jsp",
+			"id": "030801",
+			"text": "工作通知"
+		}, {
+			"url": "fkdf/fkdf.jsp",
+			"id": "030802",
+			"text": "反馈答复"
+		}],
+		"id": "0308",
+		"text": "消息管理"
+	}]
+}, {
+	"id": "04",
+	"text": "小修管理",
+	"iconCls": "icon-water",
+	"children": [{
+		"url": "/treecode/new/xxxmsz.jsp",
+		"id": "0401",
+		"text": "小修项目及费用设置"
+	}, {
+		"children": [{
+			"url": "/rc/xmnew/menu/xxcs.jsp?xmlb=2",
+			"id": "040500",
+			"text": "小修初审"
+		}, {
+			"url": "/rc/xmnew/menu/bhcl.jsp?xmlb=2",
+			"id": "040501",
+			"text": "病害处理及小修申报"
+		}, {
+			"url": "/rc/xmnew/menu/zxsb.jsp?xmlb=2",
+			"id": "040502",
+			"text": "专项计划申报"
+		}, {
+			"url": "/rc/xmnew/menu/xxsh.jsp?xmlb=2",
+			"id": "040503",
+			"text": "小修项目审核"
+		}, {
+			"url": "rc/xmnew/menu/xxsqys.jsp",
+			"id": "040504",
+			"text": "申请验收"
+		}, {
+			"url": "/rc/xmnew/menu/xxys.jsp?xmlb=2",
+			"id": "040505",
+			"text": "小修项目验收"
+		}, {
+			"url": "/rc/xmnew/menu/jlzf.jsp?xmlb=2",
+			"id": "040506",
+			"text": "计量支付"
+		}, {
+			"url": "/rc/xmnew/menu/jscx.jsp?xmlb=2",
+			"id": "040507",
+			"text": "结算查询及处理"
+		}, {
+			"url": "rc/xmnew/menu/xxshbty.jsp",
+			"id": "040508",
+			"text": "审核不通过"
+		}],
+		"id": "0405",
+		"text": "小修管理"
+	}, {
+		"children": [{
+			"url": "/pda/pda_sjcj_m.jsp",
+			"id": "040701",
+			"text": "病害数据查询"
+		}, {
+			"url": "/xxdcx/xxcx.jsp?xmlb=2",
+			"id": "040702",
+			"text": "小修单查询"
+		}, {
+			"url": "/tydy/bzdy_v_1.jsp",
+			"id": "040703",
+			"text": "小修工程查询"
+		}],
+		"id": "0407",
+		"text": "小修明细"
+	}, {
+		"children": [{
+			"url": "tj/bh/lxbh.jsp",
+			"id": "040901",
+			"text": "病害采集工作一览"
+		}, {
+			"url": "/rc/xmnew/menu/xxtj_s.jsp?xmlb=2",
+			"id": "040903",
+			"text": "国省干线小修工程完成情况统计"
+		}, {
+			"url": "/rc/xmnew/menu/xxtj.jsp?xmlb=2",
+			"id": "040904",
+			"text": "高速小修工程完成情况统计"
+		}],
+		"id": "0409",
+		"text": "统计报表"
+	}]
+}, {
+	"id": "05",
+	"text": "桥隧涵检查",
+	"iconCls": "icon-bridge",
+	"children": [{
+		"children": [{
+			"children": [{
+				"url": "/qshjc/qljc/qljc.jsp",
+				"id": "05010101",
+				"text": "桥梁经常性检查"
+			}, {
+				"url": "/bwqjc/bwqjc_zb.jsp",
+				"id": "05010102",
+				"text": "病危桥检测记录"
+			}, {
+				"url": "/qshjc/sdjc/sdjc.jsp",
+				"id": "05010103",
+				"text": "隧道经常性检查"
+			}, {
+				"url": "/qshjc/hdjc/hdjc.jsp",
+				"id": "05010104",
+				"text": "涵洞经常性检查"
+			}],
+			"id": "050101",
+			"text": "数据录入"
+		}, {
+			"children": [{
+				"url": "tj/jc/qljc.jsp",
+				"id": "050105",
+				"text": "桥梁经常性检查统计一览"
+			}, {
+				"url": "tj/jc/sdjc.jsp",
+				"id": "050106",
+				"text": "隧道经常性检查统计一览"
+			}, {
+				"url": "tj/jc/hdjc.jsp",
+				"id": "050107",
+				"text": "涵洞经常性检查统计一览"
+			}, {
+				"url": "tj/jc/bwqjc.jsp",
+				"id": "050108",
+				"text": "病危桥监测记录统计一览"
+			}],
+			"id": "050102",
+			"text": "结果查询"
+		}],
+		"id": "0501",
+		"text": "经常性检查"
+	}, {
+		"children": [{
+			"url": "/pda/pda_dqculvert_m.jsp",
+			"id": "050201",
+			"text": "涵洞定期检查数据录入"
+		}, {
+			"url": "/pda/pda_djqlcx_m.jsp",
+			"id": "050202",
+			"text": "要求定期检查的桥梁查询"
+		}, {
+			"url": "/pda/pda_djsdcx_m.jsp",
+			"id": "050203",
+			"text": "要求定期检查的隧道查询"
+		}, {
+			"url": "tj/jc/hddqjc.jsp",
+			"id": "050204",
+			"text": "涵洞定期检查统计一览"
+		}],
+		"id": "0502",
+		"text": "定期检查"
+	}]
+}, {
+	"id": "06",
+	"text": "信息采集",
+	"iconCls": "icon-message",
+	"children": [{
+		"children": [{
+			"url": "/pda/pda_lz_m.jsp",
+			"id": "060101",
+			"text": "路政数据"
+		}, {
+			"url": "/pda/pda_zcxx_m.jsp",
+			"id": "060103",
+			"text": "阻车信息"
+		}, {
+			"url": "/tfsjqx/tfsjqx.jsp",
+			"id": "060106",
+			"text": "突发事件抢修档案"
+		}, {
+			"url": "/glshjd/glshjd.jsp",
+			"id": "060108",
+			"text": "公路社会监督档案"
+		}],
+		"id": "0601",
+		"text": "信息上报"
+	}, {
+		"children": [{
+			"url": "tj/xxcj/lz.jsp",
+			"id": "060209",
+			"text": "路政信息一览"
+		}, {
+			"url": "tj/xxcj/zc.jsp",
+			"id": "060211",
+			"text": "阻车数据统计一览"
+		}, {
+			"url": "tj/xxcj/tfsj.jsp",
+			"id": "060214",
+			"text": "突发事件抢修档案统计一览"
+		}, {
+			"url": "tj/xxcj/shjd.jsp",
+			"id": "060216",
+			"text": "公路社会监督档案统计一览"
+		}],
+		"id": "0602",
+		"text": "信息查询"
+	}, {
+		"children": [{
+			"url": "/excelReport/tfsjReport.jsp",
+			"id": "060303",
+			"text": "突发事件抢修档案汇总表"
+		}, {
+			"url": "department.shjd.do",
+			"id": "060304",
+			"text": "公路社会监督档案汇总表"
+		}],
+		"id": "0603",
+		"text": "信息统计报表"
+	}]
+}, {
+	"id": "07",
+	"text": "路况评定系统",
+	"iconCls": "icon-check",
+	"children": [{
+		"children": [{
+			"url": "cjjh.listCjjh.do",
+			"id": "070100",
+			"text": "采集计划"
+		}],
+		"id": "0701",
+		"text": "采集计划"
+	}, {
+		"children": [{
+			"url": "zkpd.showStandard.do",
+			"id": "070201",
+			"text": "路况评定参数"
+		}, {
+			"url": "zkpd.showBasicModules.do",
+			"id": "070202",
+			"text": "SFC参数"
+		}],
+		"id": "0702",
+		"text": "参数设置"
+	}, {
+		"children": [{
+			"url": "cjcsj.road.do",
+			"id": "070301",
+			"text": "路线添加"
+		}, {
+			"url": "cjcsj.roadAllList.do",
+			"id": "070302",
+			"text": "路线列表"
+		}, {
+			"url": "jcsj.roadlist.do",
+			"id": "070303",
+			"text": "路线基础数据"
+		}],
+		"id": "0703",
+		"text": "路线信息"
+	}, {
+		"children": [{
+			"url": "bhsj.roadlist.do",
+			"id": "070401",
+			"text": "路面病害采集"
+		}, {
+			"url": "assess/cjy/sx/cjy.jsp",
+			"id": "070402",
+			"text": "采集仪及其它数据采集"
+		}],
+		"id": "0704",
+		"text": "数据采集"
+	}, {
+		"children": [{
+			"url": "zkpd.listTasks.do",
+			"id": "070501",
+			"text": "技术状况评定"
+		}],
+		"id": "0705",
+		"text": "技术状况评定"
+	}, {
+		"children": [{
+			"url": "reports.totalInfo.do",
+			"id": "070701",
+			"text": "统计信息"
+		}, {
+			"url": "sxlxhz.struts",
+			"id": "070702",
+			"text": "路线评定情况汇总"
+		}, {
+			"url": "assess/report/toHz.jsp",
+			"id": "070703",
+			"text": "技术评定情况查询"
+		}],
+		"id": "0707",
+		"text": "统计报表及汇总信息"
+	}, {
+		"children": [{
+			"url": "assess/rebirth/initRoad.jsp",
+			"id": "070801",
+			"text": "路线自动分段"
+		}, {
+			"url": "cjcsj.toImportRoad.do",
+			"id": "070802",
+			"text": "路线导入"
+		}],
+		"id": "0708",
+		"text": "维护"
+	}]
+}, {
+	"id": "08",
+	"text": "巡视车管理",
+	"iconCls": "icon-daily",
+	"children": [{
+		"url": "/map/map.jsp",
+		"id": "0801",
+		"text": "巡查车"
+	}, {
+		"url": "/map/tt.jsp",
+		"id": "0803",
+		"text": "视频集中监控"
+	}, {
+		"url": "/map/camset.jsp",
+		"id": "CAMSET",
+		"text": "视频参数设置"
+	}]
+}, {
+	"id": "09",
+	"text": "其它",
+	"iconCls": "icon-fixed",
+	"children": [{
+		"url": "road/road.jsp",
+		"id": "lxgl",
+		"text": "路线管理"
+	}, {
+		"url": "code.struts?method=retrieve",
+		"id": "codemanager",
+		"text": "代码管理"
+	}, {
+		"url": "/sys/user/usermodifypassword.jsp",
+		"id": "mmxg",
+		"text": "用户登录密码修改"
+	}, {
+		"url": "/sys/broadcast/Broadcastlist.jsp",
+		"id": "tzwh",
+		"text": "通知维护"
+	}, {
+		"url": "ctrl.action",
+		"id": "ctrl",
+		"text": "基础数据修改时间设置"
+	}, {
+		"url": "online.struts?method=browse",
+		"id": "0906",
+		"text": "在线用户情况"
+	}, {
+		"url": "/test/gzzj.jsp",
+		"id": "0910",
+		"text": "综合查询"
+	}, {
+		"url": "/hywjgl/hywj.jsp",
+		"id": "hywjgl",
+		"text": "会议文件管理"
+	}]
+}, {
+	"id": "10",
+	"text": "水毁管理",
+	"iconCls": "icon-check",
+	"children": [{
+		"children": [{
+			"children": [{
+				"url": "/tydy/bzdy_dr_1.jsp",
+				"id": "0101010133",
+				"text": "水毁数据情况"
+			}],
+			"id": "030001",
+			"text": "资料录入"
+		}, {
+			"children": [{
+				"url": "tj/xxcj/sh.jsp",
+				"id": "0101020135",
+				"text": "水毁数据信息一览"
+			}, {
+				"url": "department.glsh.do",
+				"id": "060302",
+				"text": "公路水毁情况统计表"
+			}],
+			"id": "030002",
+			"text": "资料查询"
+		}],
+		"id": "SHJJC",
+		"text": "水毁管理"
+	}, {
+		"children": [{
+			"url": "/rc/shcj/menu/shdjsz.jsp",
+			"id": "030600",
+			"text": "水毁工程单价设置"
+		}, {
+			"url": "/rc/shcj/menu/sqshxf.jsp",
+			"id": "030602",
+			"text": "申请修复"
+		}, {
+			"url": "/rc/shcj/menu/xchs.jsp",
+			"id": "030603",
+			"text": "初审"
+		}, {
+			"url": "/rc/shcj/menu/sctz.jsp",
+			"id": "030604",
+			"text": "上传修复方案"
+		}, {
+			"url": "/rc/shcj/menu/tbgcl.jsp",
+			"id": "030605",
+			"text": "申请验收"
+		}, {
+			"url": "/rc/shcj/menu/ys.jsp",
+			"id": "030606",
+			"text": "验收"
+		}],
+		"id": "0306",
+		"text": "水毁工程修复"
+	}, {
+		"children": [{
+			"url": "/tj/ry/dhcb.jsp",
+			"id": "030701",
+			"text": "待核查表"
+		}, {
+			"url": "/tj/ry/dhchzb.jsp",
+			"id": "030702",
+			"text": "待核查表汇总表"
+		}, {
+			"url": "/report/shxfwctjb_condition.jsp",
+			"id": "030703",
+			"text": "水毁修复完成统计表"
+		}, {
+			"url": "/tj/ry/shxfylb.jsp",
+			"id": "030704",
+			"text": "水毁修复一览表"
+		}, {
+			"url": "/tj/ry/xfhcdbhzb.jsp",
+			"id": "030705",
+			"text": "修复核查对比汇总表"
+		}, {
+			"url": "/rc/shcj/menu/wlrshxftj.jsp",
+			"id": "030706",
+			"text": "未列入水毁修复统计"
+		}],
+		"id": "0307",
+		"text": "水毁修复统计"
+	}]
+}, {
+	"id": "11",
+	"text": "机械设备管理",
+	"iconCls": "icon-message",
+	"children": [{
+		"children": [{
+			"url": "/phaseTwo/equipment/equipmentFiles/equipmentInfo_Manager.jsp",
+			"id": "110101",
+			"text": "设备档案管理"
+		}, {
+			"url": "/phaseTwo/equipment/equipmentFiles/leaseContract_Manager.jsp",
+			"id": "110102",
+			"text": "租赁管理"
+		}, {
+			"url": "/phaseTwo/equipment/equipmentFiles/operator_Manager.jsp",
+			"id": "110103",
+			"text": "人员档案管理"
+		}, {
+			"url": "/phaseTwo/equipment/equipmentFiles/code_Manager.jsp",
+			"id": "110104",
+			"text": "设备分类代码管理"
+		}],
+		"id": "1101",
+		"text": "档案管理"
+	}, {
+		"children": [{
+			"url": "/phaseTwo/equipment/equipment_use/running_Manager.jsp",
+			"id": "110201",
+			"text": "设备运转记录"
+		}, {
+			"url": "/phaseTwo/equipment/equipment_use/accident_Manager.jsp",
+			"id": "110202",
+			"text": "事故管理"
+		}],
+		"id": "1102",
+		"text": "使用管理"
+	}, {
+		"children": [{
+			"url": "/phaseTwo/equipment/equipment_maintain/plan_Manager.jsp",
+			"id": "110301",
+			"text": "保修计划管理"
+		}, {
+			"url": "/phaseTwo/equipment/equipment_maintain/maintain_Manager.jsp",
+			"id": "110302",
+			"text": "保养管理"
+		}, {
+			"url": "/phaseTwo/equipment/equipment_maintain/DZrepair_Manager.jsp",
+			"id": "110303",
+			"text": "大中修管理"
+		}, {
+			"url": "/phaseTwo/equipment/equipment_maintain/repair_Manager.jsp",
+			"id": "110304",
+			"text": "维修管理"
+		}],
+		"id": "1103",
+		"text": "维修保养管理"
+	}, {
+		"children": [{
+			"url": "/phaseTwo/equipment/equipment_scrap/scrap_Manager.jsp",
+			"id": "110401",
+			"text": "设备报废"
+		}],
+		"id": "1104",
+		"text": "报废管理"
+	}, {
+		"children": [{
+			"url": "/phaseTwo/equipment/subsidy_plan/purchasePlan_Manager.jsp",
+			"id": "110501",
+			"text": "购置计划"
+		}, {
+			"url": "/phaseTwo/equipment/subsidy_plan/subsidyDis_Manager.jsp",
+			"id": "110502",
+			"text": "补助下拨分配"
+		}, {
+			"url": "/phaseTwo/equipment/subsidy_plan/annualSta_Manager.jsp",
+			"id": "110503",
+			"text": "年度统计"
+		}, {
+			"url": "/phaseTwo/equipment/subsidy_plan/quarterSta_Manager.jsp",
+			"id": "110504",
+			"text": "季度统计"
+		}, {
+			"url": "/phaseTwo/equipment/subsidy_plan/monthlySta_Manager.jsp",
+			"id": "110505",
+			"text": "月度统计"
+		}, {
+			"url": "/phaseTwo/equipment/subsidy_plan/optional_Manager.jsp",
+			"id": "110506",
+			"text": "自选时间统计"
+		}],
+		"id": "1105",
+		"text": "设备补助计划"
+	}]
+}]
