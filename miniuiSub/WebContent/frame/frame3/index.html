@@ -20,7 +20,7 @@
         .mini-tabs .mini-tab{background: #fff;}
         .mini-tab-active{background:#f5f5f5 !important;border-bottom-color:#f5f5f5 !important;}
         .sidebar{background: #203a59 !important;}
-        .navbar-nav > li > a{background: transparent;color:#f5f5f5;}
+        .navbar-nav > li > a{background: transparent;color:#f5f5f5;line-height: 30px;}
         .navbar-nav > li > a:hover{background: rgba(23,86,163,0.85);color:#fff;}
         .navbar-nav li.open a.dropdown-toggle{background: transparent;color:#f5f5f5;}
         .mini-tabs-body-top{background: #f5f5f5;}
@@ -34,14 +34,14 @@
 </div>
 
 <div class="container">
-    <div class="navbar" style="background:url(topRight-1.jpg);">
+    <div class="navbar" style="background:url(topRight-1.jpg);height:60px;">
         <div class="navbar-brand" style="background:url(logo.png) no-repeat left 20px center;width:355px;height:50px;"></div>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><i class="fa fa-paper-plane"></i> 代办事项</a></li>
             <li><a href="#"><i class="fa fa-pencil-square-o"></i> 修改密码</a></li>
-            <li class="dropdown">
-                <a class="dropdown-toggle userinfo">
-                    <img class="user-img" src="res/images/user2-160x160.jpg" />个人资料<i class="fa fa-angle-down"></i>
+            <li>
+                <a href="#" style="padding:0 15px;line-height: 60px;">
+                    <img class="user-img" src="res/images/user2-160x160.jpg" style="width:38px;height:38px;border-radius:19px;/* line-height: 29px; */margin-top: 10.5px;display: inline-block;float: left;"/>个人资料</i>
                 </a>
                 <ul class="dropdown-menu pull-right">
                     <li><a href="#"><i class="fa fa-eye "></i> 用户信息</a></li>
@@ -51,7 +51,7 @@
         </ul>
     </div>
 
-    <div class="main">
+    <div class="main" style="top:60px;">
         <div id="mainTabs" class="mini-tabs indexTabs" activeIndex="0" style="width:100%;height:100%;" plain="false"
                 buttons="#tabsButtons" arrowPosition="side">
             <div name="index" iconCls="fa-android" title="控制台">
