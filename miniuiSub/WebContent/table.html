@@ -31,6 +31,7 @@
     showHeader="false"
     showPager="false"
     ondrawcell="draw"
+    onrowclick="onrowclick"
  onmouseup="return datagrid1_onmouseup()">
     <div property="columns">
         <div type="indexcolumn" ></div>
@@ -62,6 +63,10 @@
 
         grid.load();
 
+        grid.on("rowclick",function(e){
+           var record=e.record;
+           console.log(record);
+        });
        // var menu = new ColumnsMenu(grid);
 
         function search() {
@@ -82,7 +87,7 @@
             }
             return "";
         }
-        function datagrid1_onmouseup() {
+        function datagrid1_onmouseup() {//实现简单的联动
 
         }
 
