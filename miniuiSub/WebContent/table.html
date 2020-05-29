@@ -45,10 +45,7 @@
     </div>
 </div>
     <script type="text/javascript">
-         function onrowclick(e){
-          var record=e.record;
-          console.log(record);
-        }
+
     	var H = parseInt($(window).height())-96;
     	$("#datagrid1").css("height",H+"px");
           //初始化操作列按钮
@@ -68,7 +65,10 @@
         grid.load();
 
        // var menu = new ColumnsMenu(grid);
-
+         function onrowclick(e){
+          var record=e.record;
+          console.log(record);
+        }
         function search() {
             var key = document.getElementById("key").value;
             grid.load({ key: key});
