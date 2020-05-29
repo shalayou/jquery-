@@ -31,7 +31,6 @@
     showHeader="false"
     showPager="false"
     ondrawcell="draw"
-    onrowclick="rowclick"
  onmouseup="return datagrid1_onmouseup()">
     <div property="columns">
         <div type="indexcolumn" ></div>
@@ -62,7 +61,6 @@
         var grid = mini.get("datagrid1");
 
         grid.load();
-
         grid.on("rowclick",function(e){
            var record=e.record;
            console.log(record);
