@@ -31,6 +31,7 @@
     showHeader="false"
     showPager="false"
     ondrawcell="draw"
+    onrowclick="onrowclick"
  onmouseup="return datagrid1_onmouseup()">
     <div property="columns">
         <div type="indexcolumn" ></div>
@@ -44,6 +45,10 @@
     </div>
 </div>
     <script type="text/javascript">
+         function onrowclick(e){
+          var record=e.record;
+          console.log(record);
+        }
     	var H = parseInt($(window).height())-96;
     	$("#datagrid1").css("height",H+"px");
           //初始化操作列按钮
@@ -61,10 +66,7 @@
         var grid = mini.get("datagrid1");
 
         grid.load();
-        grid.on("rowclick",function(e){
-           var record=e.record;
-           console.log(111111);
-        });
+
        // var menu = new ColumnsMenu(grid);
 
         function search() {
