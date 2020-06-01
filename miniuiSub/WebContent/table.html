@@ -13,6 +13,8 @@
         .mini-grid-row {background:#fff !important;}
         .mini-grid-topRightCell{background:#edf4fd !important;}
         .mini-grid-border{border:1px solid #d3e4f9 !important;border-top:none !important;}
+        .mini-grid-row-selected{color:blue !important;}
+        .mini-pager{background:#fff !important;}
     </style>
 </head>
 <body >
@@ -25,25 +27,54 @@
         
     </div>
 
-<div id="datagrid1" class="mini-datagrid" style="width:100%;" 
-    url="./demo/data/AjaxService.json?method=SearchEmployees"
+<div id="datagrid1" class="mini-datagrid" style="width:70%;float:left;" 
+    url="https://shalayou.github.io/jquery-/miniuiSub/WebContent/demo/data/AjaxService.json?method=SearchEmployees"
     idField="id" allowResize="true"
     showHeader="false"
-    showPager="false"
     ondrawcell="draw"
-    onrowclick="onrowclick"
- onmouseup="return datagrid1_onmouseup()">
+    onselectionchanged="onSelectionChanged"
+    >
     <div property="columns">
-        <div type="indexcolumn" ></div>
+        <div type="indexcolumn" headerAlign="center" align="center">序号</div>
         <div field="loginname" width="120" headerAlign="center" align="center" allowSort="true">员工帐号</div>    
         <div field="name" width="120" headerAlign="center" align="center" allowSort="true">姓名</div>                            
         <div field="gender" width="100" renderer="onGenderRenderer" headerAlign="center" align="center" headerAlign="center">性别</div>
-        <div field="salary" numberFormat="¥#,0.00" headerAlign="center" align="center" width="100" allowSort="true">薪资</div>                                
+        <div field="salary" numberFormat="¥#,0.00" headerAlign="center" align="center" width="100" allowSort="true">薪资</div>      
         <div field="age" width="100" allowSort="true" headerAlign="center" align="center" decimalPlaces="2" dataType="float">年龄</div>
         <div field="createtime" width="100" headerAlign="center" align="center" dateFormat="yyyy-MM-dd" allowSort="true">创建日期</div> 
-        <div name="Operate" width="135" headeralign="center" align="center" allowsort="true"  headerStyle="background-color:#e4edf2">操作</div>               
+        <div name="Operate" width="135" headeralign="center" align="center" allowsort="true"  headerStyle="background-color:#e4edf2;">操作</div>               
     </div>
 </div>
+ <div id="editForm1" style="width:29.5%;float:right;"> 
+        <div  class="mini-tabs" style="width:100%;" activeIndex="0">
+            <div title="基本信息">
+                <input class="mini-hidden" name="id"/>
+                <table style="width:100%;">
+                    <tr>
+                        <td style="width:80px;">员工帐号：</td>
+                        <td style="width:150px;"><input name="loginname" class="mini-textbox" /></td>
+                        <td style="width:80px;">姓名：</td>
+                        <td style="width:150px;"><input name="name" class="mini-textbox" /></td>
+                        <td style="width:80px;">薪资：</td>
+                        <td style="width:150px;"><input name="salary" class="mini-textbox" /></td>
+                    </tr>
+                    <tr>
+                        <td>性别：</td>
+                        <td><input name="gender" class="mini-combobox" data="Genders"/></td>
+                        <td>年龄：</td>
+                        <td><input name="age" class="mini-spinner"  maxValue="200" value=""  /></td>
+                        <td>出生日期：</td>
+                        <td><input name="birthday" class="mini-datepicker" /></td>
+                    </tr>
+                
+                </table>
+            </div>
+            <div title="备注">
+                <input name="remarks" class="mini-textarea" style="width:100%;height:100px;"/>
+
+            </div>
+        </div>
+    </div>
     <script type="text/javascript">
 
     	var H = parseInt($(window).height())-96;
@@ -61,14 +92,13 @@
         mini.parse();
         
         var grid = mini.get("datagrid1");
-
+        var editForm = document.getElementById("editForm1");
+        var form = new mini.Form("editForm1");
+        grid.hideColumn("Operate");
         grid.load();
 
        // var menu = new ColumnsMenu(grid);
-         function onrowclick(e){
-          var record=e.record;
-          console.log(record);
-        }
+        
         function search() {
             var key = document.getElementById("key").value;
             grid.load({ key: key});
@@ -78,6 +108,50 @@
                 search();
             }
         });
+
+        function onSelectionChanged(e) {
+            
+            var grid = e.sender;
+            var record = grid.getSelected();
+             /*var uid = record.id;
+             var loginname = record.loginname;
+             if(loginname=="就看看看"){
+                alert(loginname);
+             }else{
+                alert(uid);
+            }*/
+            if(record){
+                editRow(record._uid);
+            }else {                
+                form.reset();
+            }
+        }
+          console.log(grid.getRowByUID("6"));
+         function editRow(row_uid){
+            var row = grid.getRowByUID(row_uid);
+          
+            if (row) {
+               
+
+                //表单加载员工信息
+                var form = new mini.Form("editForm1");
+                if (grid.isNewRow(row)) {                    
+                    form.reset();
+                } else {
+                    form.loading();
+                    $.ajax({
+                        url: "https://shalayou.github.io/jquery-/miniuiSub/WebContent/demo/data/AjaxService.json?method=GetEmployee&id=" + row.id,
+                        success: function (text) {
+                            var o = mini.decode(text);
+                            form.setData(o);
+                            form.unmask();
+                        }
+                    });
+                }
+
+                grid.doLayout();
+            }
+        }
         ///////////////////////////////////////////////////////
         var Genders = [{ id: 1, text: '男' }, { id: 2, text: '女'}];
         function onGenderRenderer(e) {
@@ -87,19 +161,11 @@
             }
             return "";
         }
-        function datagrid1_onmouseup() {//实现简单的联动
-
+        function datagrid1_onmouseup(e) {//实现简单的联动
+             var record=e.record;
+          console.log(record);
         }
 
     </script>
-
-    <div class="description" style="display:none;">
-        <h3>Description</h3>
-        
-    </div>
-
-
-  
-
 </body>
 </html>
